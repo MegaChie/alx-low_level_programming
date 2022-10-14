@@ -1,13 +1,14 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - entry point
  * return: always 0 (Success)
+ */
 int main(void)
 {
 int a;
 int s;
 
-for (a = 48; a < 56; n++)
+for (a = 48; a < 56; a++)
 {
 for (s = 49; s < 57; s++)
 {
@@ -23,6 +24,6 @@ putchar(' ');
 }
 }
 }
-putchar('/n');
+putchar('\n');
 return (0);
 }
