@@ -6,12 +6,16 @@
  */
 int main(void)
 {
-char alpha;
+char alpha = 'a';
 
-for (alpha = 'a'; alpha <= 'z' && alpha != 'e' && alpha != 'q'; alpha++)
-	{
-	putchar(alpha);
-	}
+while (alpha <= 'z')
+{
+	if (alpha != 'q' && alpha != 'e')
+		{
+		putchar(alpha);
+		}
+	alpha++;
+}
 putchar('\n');
 return (0);
 }
