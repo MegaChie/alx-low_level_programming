@@ -2,16 +2,16 @@
 
 int main(void)
 {
-long int a = 0;
-long int s = 1;
-double d;
+long long int a = 0;
+long long int s = 1;
+long long int d;
 int f;
 for (f = 1; f < 98; f++)
 	{
 	d = a + s; 
 	a = s; 
 	s = d; 
-	printf("%ld, ", s);
+	printf("%lld, ", s);
 	}
 printf("\n");
 return (0);
