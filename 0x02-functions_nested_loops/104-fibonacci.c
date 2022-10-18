@@ -2,8 +2,8 @@
 
 int main(void)
 {
-int a = 1;
-int s = 2;
+int a = 0;
+int s = 1;
 int next;
 
 for (a = 1; a < 98; a++)
