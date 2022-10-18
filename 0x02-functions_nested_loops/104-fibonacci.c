@@ -2,13 +2,13 @@
 
 int main(void)
 {
-int a, s;
+int a = 1, s = 2, next;
 
-s = 1;
-printf("%d, ", s);
 for (a = 1; a < 98; a++)
 	{
-	s = s + (1 + a);
+	a = a + s; 
+	a = s; 
+	s = next; 
 	printf("%d, ", s);
 	}
 printf("\n");
