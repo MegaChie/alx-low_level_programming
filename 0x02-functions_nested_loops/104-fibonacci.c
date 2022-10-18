@@ -8,7 +8,7 @@ s = 1;
 printf("%d, ", s);
 for (a = 1; a < 98; a++)
 	{
-	s = +a;
+	s = s + (1 + a);
 	printf("%d, ", s);
 	}
 printf("\n");
