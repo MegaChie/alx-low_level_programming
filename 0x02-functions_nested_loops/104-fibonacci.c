@@ -4,13 +4,13 @@ int main(void)
 {
 int a = 0;
 int s = 1;
-int next;
+int d;
 
 for (a = 1; a < 98; a++)
 	{
-	next = a + s; 
+	d = a + s; 
 	a = s; 
-	s = next; 
+	s = d; 
 	printf("%d, ", s);
 	}
 printf("\n");
