@@ -2,7 +2,9 @@
 
 int main(void)
 {
-int a = 1, s = 2, next;
+int a = 1;
+int s = 2;
+int next;
 
 for (a = 1; a < 98; a++)
 	{
