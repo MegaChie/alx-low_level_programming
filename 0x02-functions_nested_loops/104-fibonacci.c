@@ -11,7 +11,7 @@ for (f = 1; f < 98; f++)
 	d = a + s; 
 	a = s; 
 	s = d; 
-	printf("%d, ", s);
+	printf("%ld, ", s);
 	}
 printf("\n");
 return (0);
