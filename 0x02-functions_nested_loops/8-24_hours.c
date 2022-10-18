@@ -17,6 +17,7 @@ for (a = 0; a < 24; a++)
 		_putchar(':');
 		_putchar((s / 10) + '0');
 		_putchar((s % 10) + '0');
+		_putchar('\n');
 		}
 	}
 }
