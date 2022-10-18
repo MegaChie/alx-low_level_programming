@@ -1,0 +1,2 @@
+in this folder you will find the solving of the first C language project handded out by ALx SE training. if not changed, revert to the project page to know what file do.                                                                               
+with love. MEGA.
