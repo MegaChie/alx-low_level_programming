@@ -12,4 +12,5 @@ for (a = 1; a < 98; a++)
 	printf("%d, ", s);
 	}
 printf("\n");
+return (0);
 }
