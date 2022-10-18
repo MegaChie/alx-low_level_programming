@@ -13,26 +13,32 @@ if (n > 98)
 	{
 	for (a = n; a >= 98; a--)
 		{
-		if (a != 98)
+		if (a == 98)
 			{
-			printf("%d", a);
+			printf("%d\n", a);
 			}
 		else
-		{
-		printf("%d ,", a);
-		}
+			{
+			printf("%d, ", a);
+			}
 		}
 	}
 else if (n == 98)
 	{
-	printf("%d",  n);
+	printf("%d\n", n);
 	}
 else
 	{
 	for (a = n; a <= 98; a++)
 		{
-		printf("%d, ", a);
+		if (a == 98)
+			{
+			printf("%d\n", a);
+			}
+		else
+			{
+			printf("%d\n", a);
+			}
 		}
 	}
-printf("\n");
 }
