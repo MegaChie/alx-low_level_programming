@@ -4,7 +4,7 @@ int main(void)
 {
 long int a = 0;
 long int s = 1;
-double int d;
+double d;
 int f;
 for (f = 1; f < 98; f++)
 	{
