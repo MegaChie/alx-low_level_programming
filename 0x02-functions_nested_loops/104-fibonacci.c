@@ -5,7 +5,7 @@ int main(void)
 int a, s;
 
 s = 1;
-printf("%d", s);
+printf("%d, ", s);
 for (a = 1; a < 98; a++)
 	{
 	s = s + a;
