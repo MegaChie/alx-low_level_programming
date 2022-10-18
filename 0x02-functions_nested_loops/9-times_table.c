@@ -20,6 +20,7 @@ for (a = 0; a < 10; a++)
 			_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
+			_putchar(d + '0');
 			}
 		else if (d >= 10)
 			{
