@@ -5,8 +5,8 @@ int main(void)
 int a = 0;
 int s = 1;
 int d;
-
-for (a = 1; a < 98; a++)
+int f;
+for (f = 1; f < 98; f++)
 	{
 	d = a + s; 
 	a = s; 
