@@ -6,9 +6,9 @@ void times_table(void)
 {
 int a, s, d;
 
-for (a = 0; a <= 9; a++)
+for (a = 0; a < 10; a++)
 	{
-	for (s = 0; s <= 9; s++)
+	for (s = 0; s < 10; s++)
 		{
 		d = a * s;
 		if (s == 0)
