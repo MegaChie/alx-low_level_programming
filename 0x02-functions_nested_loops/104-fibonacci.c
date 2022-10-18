@@ -8,7 +8,7 @@ int next;
 
 for (a = 1; a < 98; a++)
 	{
-	a = a + s; 
+	next = a + s; 
 	a = s; 
 	s = next; 
 	printf("%d, ", s);
