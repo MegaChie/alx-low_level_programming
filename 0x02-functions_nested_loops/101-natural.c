@@ -6,19 +6,17 @@
  */
 int main(void)
 {
-unsigned long int a, s, d;
+unsigned long int a = 0, s = 0, d;
 int i;
 
 for (i = 0; i < 1024; i++)
 {
 if ((i % 3) == 0)
 	{
-	s = 0;
 	s = s + i;
 	}
 else if ((i % 5) == 0)
 	{
-	a = 0;
 	a = a + i;
 	}
 }
