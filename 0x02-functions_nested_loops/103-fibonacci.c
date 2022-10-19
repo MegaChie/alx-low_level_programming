@@ -22,6 +22,6 @@ next = j + k;
 j = k;
 k = next;
 }
-printf("\n");
+printf("%lu\n", sum);
 return (0);
 }
