@@ -22,6 +22,6 @@ next = j + k;
 j = k;
 k = next;
 }
-ptintf("\n");
+printf("\n");
 return (0);
 }
