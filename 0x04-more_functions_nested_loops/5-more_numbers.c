@@ -9,7 +9,7 @@ int a, s;
 
 for (a = 0; a < 10; a++)
 {
-for (s = 0; s <= 15; s++)
+for (s = 0; s < 15; s++)
 	{
 	_putchar(s);
 	}
