@@ -26,7 +26,7 @@ printf(" FizzBuzz");
 }
 else if (i == 1)
 {
-print("%d", i);
+printf("%d", i);
 }
 else
 {
