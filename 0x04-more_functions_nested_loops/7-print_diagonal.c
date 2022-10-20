@@ -11,12 +11,17 @@ _putchar('\n');
 }
 else
 {
-int a;
+int s;
+int d;
 
-for (a = 0; a < n; a++)
+for (s = 0; s < n; s++)
 {
-_putchar('\\');
+for (d = 0; d < s; d++)
+{
+_putchar(' ');
 }
+_putchar('\\');
 _putchar('\n');
+}
 }
 }
