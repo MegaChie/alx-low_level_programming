@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * print_diagonal - draws a straight line in the terminal
- * @n: number of times the character _ should be printed
+ * print_triangle - draws a straight line in the terminal
+ * @size: number of times the character _ should be printed
  */
-void print_diagonal(int n)
+void print_triangle(int size)
 {
-if (n <= 0)
+if (size <= 0)
 {
 _putchar('\n');
 }
@@ -14,16 +14,13 @@ else
 int s;
 int d;
 
-for (s = 1; s < size; s++)
+for (s = 0; s < size; s++)
 {
-for (d = 1; d < size; d++)
+for (d = 0; d < s; d++)
 {
 _putchar(' ');
 }
-for (j = 1; j <= i; j++)
-{
-_putchar('#');
-}
+_putchar('\\');
 _putchar('\n');
 }
 }
