@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_triangle - draws a straight line in the terminal
- * @size: number of times the character _ should be printed
+ * print_triangle - prints a triangle, followed by a new line
+ * @size: size of the triangle
  */
 void print_triangle(int size)
 {
@@ -11,16 +11,18 @@ _putchar('\n');
 }
 else
 {
-int s;
-int d;
+int i, j;
 
-for (s = 0; s < size; s++)
+for (i = 1; i <= size; i++)
 {
-for (d = 0; d < s; d++)
+for (j = i; j < size; j++)
 {
 _putchar(' ');
 }
-_putchar('\\');
+for (j = 1; j <= i; j++)
+{
+_putchar('#');
+}
 _putchar('\n');
 }
 }
