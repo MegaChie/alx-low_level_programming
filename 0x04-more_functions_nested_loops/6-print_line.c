@@ -16,6 +16,6 @@ for (a = 0; a > n; a++)
 }
 else
 	{
-	_Putchar('\n');
+	_putchar('\n');
 	}
 }
