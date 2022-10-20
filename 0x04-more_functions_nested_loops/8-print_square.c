@@ -11,12 +11,11 @@ _putchar('\n');
 }
 else
 {
-int s;
-int d;
+int i, j;
 
-for (d = 0; d < s; d++)
+for (i = 0; i < size; i++)
 {
-for (s = 0; s < size; s++)
+for (j = 0; j < size; j++)
 {
 _putchar('#');
 }
