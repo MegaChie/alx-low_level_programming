@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int _strlen - swaps the values of two integers
+ * _strlen - swaps the values of two integers
  * @s: pointer to first value
  */
 int _strlen(char *s)
