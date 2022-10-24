@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - check the code 
+ * main - assign new value.
  * @n - pointer that updates value
  * Return: Always 0.
  */
