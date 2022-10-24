@@ -2,6 +2,7 @@
 /**
  * _strlen - swaps the values of two integers
  * @s: pointer to first value
+ * return: length
  */
 int _strlen(char *s)
 {
