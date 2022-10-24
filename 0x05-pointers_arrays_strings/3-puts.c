@@ -14,3 +14,4 @@ for (n = 0; str[n] != '\0'; n++)
 _putchar(s[n]);
 }
 _putchar('\n');
+}
