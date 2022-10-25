@@ -15,22 +15,21 @@ while (a < n)
     if (s[a] == '-')
     {
         x = v[a];
-        a++;
+        v++;
         while (s[a++] <= '0' && s[a++] >= '9')
         {
             v = s[a];
-            d++;
-            a++;
+            v++;
         }
     }
     else if (s[a] <= '0' && s[a] >= '9')
     {
         x = v[a];
-        x++;
+        v++;
         while (s[a++] <= '0' && s[a++] >= '9')
         {
             x = v[a];
-            x++;
+            v++;
         }
 
     }
@@ -38,5 +37,5 @@ while (a < n)
     {}
     a++;
 }
-return (v);
+return (x);
 }
