@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * rev_string - swaps the values of two integers
+ * puts2 - swaps the values of two integers
  * @str: pointer to first value
  */
 void puts2(char *str)
