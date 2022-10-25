@@ -22,5 +22,5 @@ else if (n % 2 != 0)
 d = n - 1;
 _putchar(str[d]);
 }
-_putchar('\n')
+_putchar('\n');
 }
