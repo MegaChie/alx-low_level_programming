@@ -5,23 +5,22 @@
  */
 void puts_half(char *str)
 {
-int n;
+int n, s, d;
 
 for (n = 0; str[n] != '\0'; n++)
 {
 }
 if (n % 2 == 0)
 {
-int s;
-for (s = n / 2; s <= n; s++)
+for (s = n / 2; s >= n; s++)
 {
 _putchar(str[s]);
 }
 _putchar('\n');
 }
-else
+else if (n % 2 != 0)
 {
-int d = n - 1;
+d = n - 1;
 _putchar(str[d]);
 _putchar('\n');
 }
