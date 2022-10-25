@@ -12,11 +12,11 @@ for (n = 0; str[n] != '\0'; n++)
 }
 if (n % 2 == 0)
 {
-    int s;
-    for (s = n / 2; s <= n; s++)
-    {
-        _putchar(str[s]);
-    }
+int s;
+for (s = n / 2; s <= n; s++)
+{
+    _putchar(str[s]);
+}
     _putchar('\n');
 }
 else
