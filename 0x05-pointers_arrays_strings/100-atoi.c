@@ -6,8 +6,7 @@
  */
 int _atoi(char *s)
 {
-int n, a = 0;
-char x, *d = &x;
+int n, a = 0, *v;
 
 for (n = 0; s[n] != '\0'; n++)
 {}
@@ -15,22 +14,22 @@ while (a < n)
 {
     if (s[a] == '-')
     {
-        x[d] = s[a];
+        v = s[a];
         d++;
         while (s[a++] <= '0' && s[a++] >= '9')
         {
-            x[d] = s[a];
+            v = s[a];
             d++;
             a++;
         }
     }
     else if (s[a] <= '0' && s[a] >= '9')
     {
-        x[d] = s[a];
+        v = s[a];
         d++;
         while (s[a++] <= '0' && s[a++] >= '9')
         {
-            x[d] = s[a];
+            v = s[a];
             d++;
             a++;
         }
@@ -40,9 +39,5 @@ while (a < n)
     {}
     a++;
 }
-while (x[d] != '\0')
-{
-    _putchar(x);
-}
-return (1);
+return (v);
 }
