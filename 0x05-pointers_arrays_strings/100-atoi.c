@@ -40,5 +40,6 @@ while (a < n)
     {}
     a++;
 }
-return (0);
+
+return (x);
 }
