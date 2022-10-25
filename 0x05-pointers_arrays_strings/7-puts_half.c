@@ -10,7 +10,6 @@ int n;
 for (n = 0; str[n] != '\0'; n++)
 {
 }
-return (n);
 if (n % 2 == 0)
 {
     int s;
