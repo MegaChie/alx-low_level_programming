@@ -34,4 +34,9 @@ for (a = 0; s[a] == '-'; a++)
     else if (s[a++] >= 'A' && s[a++] <= 'Z')
     {}
 }
+for (x = 0; r[x] != '\0'; x++)
+{
+    _putchar(r[x]);
+}
+return (0);
 }
