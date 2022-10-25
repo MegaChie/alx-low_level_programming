@@ -8,6 +8,7 @@ int _atoi(char *s)
 {
 int n, h, d = 0, g = 0;
 char f;
+int j = &f;
 
 for (n = 0; s[n] != '\0'; n++)
 {
@@ -15,11 +16,11 @@ for (n = 0; s[n] != '\0'; n++)
 for (h = 0; h < n; h++)
     if (s[h] == '-' || s[h] == '+')
     {
-        f[g] = s[h];
+        j[g] = s[h];
     }
     else if (s[h] >= 0 && s[h] <= 9)
     {
-        f[g] = s[h];
+        j[g] = s[h];
         g++;
     }
     else if (s[h] == '\0')
