@@ -20,7 +20,8 @@ for (i = a / 2; str[i] != '\0'; i++)
 {
 _putchar(str[i]);
 }
-} else if (a % 2)
+}
+else if (a % 2)
 {
 for (n = (a - 1) / 2; n < a - 1; n++)
 {
