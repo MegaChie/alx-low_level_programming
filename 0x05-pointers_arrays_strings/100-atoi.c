@@ -14,21 +14,21 @@ while (a < n)
 {
     if (s[a] == '-')
     {
-        x = v[a];
+        x[v] = s[a];
         v++;
         while (s[a++] <= '0' && s[a++] >= '9')
         {
-            x = v[a];
+            x[v] = s[a];
             v++;
         }
     }
     else if (s[a] <= '0' && s[a] >= '9')
     {
-        x = v[a];
+        x[v] = s[a];
         v++;
         while (s[a++] <= '0' && s[a++] >= '9')
         {
-            x = v[a];
+            x[v] = s[a];
             v++;
         }
 
