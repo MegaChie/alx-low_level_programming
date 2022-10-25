@@ -17,7 +17,7 @@ if (n % 2 == 0)
     {
         _putchar(str[s]);
     }
-    _putchar('\n')
+    _putchar('\n');
 }
 else
 {
