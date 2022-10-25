@@ -23,4 +23,5 @@ else
     int d = n - 1;
     _putchar(str[d]);
 }
+_putchar('\n');
 }
