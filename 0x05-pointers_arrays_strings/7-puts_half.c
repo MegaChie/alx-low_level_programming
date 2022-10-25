@@ -12,7 +12,7 @@ for (n = 0; str[n] != '\0'; n++)
 }
 if (n % 2 == 0)
 {
-for (s = n / 2; s >= n && str[s] != '\0'; s++)
+for (s = n / 2; s <= n && str[s] != '\0'; s++)
 {
 _putchar(str[s]);
 }
