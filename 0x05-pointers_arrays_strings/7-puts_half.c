@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _puts - swaps the values of two integers
+ * puts_half - swaps the values of two integers
  * @str: pointer to first value
  */
-void _puts(char *str)
+void puts_half(char *str)
 {
 int n;
 
