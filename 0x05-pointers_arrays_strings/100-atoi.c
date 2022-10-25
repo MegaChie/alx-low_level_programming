@@ -11,11 +11,11 @@ char d;
 char *r = &d;
 for (n = 0; s[n] != '\0'; n++)
 {}
-for (a = 0; (s[a] >= 'a' && s[a] <= 'z') && (a < n); a++)
+for (a = 0; s[a] >= 'a' && s[a] <= 'z'; a++)
 {}
-for (a = 0; (s[a] >= 'A' && s[a] <= 'Z') && (a < n); a++)
+for (a = 0; s[a] >= 'A' && s[a] <= 'Z'; a++)
 {}
-for (a = 0; s[a] == '-' && a < n; a++)
+for (a = 0; s[a] == '-'; a++)
 {
 r[x] = s[a];
 x++;
