@@ -11,7 +11,7 @@ char *_strcpy(char *dest, char *src)
 {
 int n, s;
 
-for (n = 0; s[n] != '\0'; n++)
+for (n = 0; src[n] != '\0'; n++)
 {
 }
 for (s = 0; s < n; s++)
