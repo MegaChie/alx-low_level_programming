@@ -42,6 +42,6 @@ while (a < n)
 }
 while (x[d] != '\0')
 {
-    _putchar(x)
+    _putchar(x);
 }
 }
