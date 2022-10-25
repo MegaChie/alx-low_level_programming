@@ -6,26 +6,32 @@
  */
 int _atoi(char *s)
 {
-int n, h, d = 0, g = 0;
-char f;
-char *j = &f;
+int n, a, x = 0, n;
+char d;
 
 for (n = 0; s[n] != '\0'; n++)
+{}
+for (a = 0; s[a] >= 'a' && s[a] <= 'z'; a++)
+{}
+for (a = 0; s[a] >= 'A' && s[a] <= 'Z'; a++)
+{}
+for (a = 0; s[a] == '-'; a++)
 {
+    d[x] = s[a];
+    x++;
+    if (s[a++] >= '0' && s[a++] <= '9')
+    {
+        d[x] = s[a++];
+        x++;
+        for (n = a; s[n] >= '0' && n <= '9')
+        {
+            d[x] = s[n];
+            x++;
+        }
+    }
+    else if (s[a++] >= 'a' && s[a++] <= 'z')
+    {}
+    else if (s[a++] >= 'A' && s[a++] <= 'Z')
+    {}
 }
-for (h = 0; h < n; h++)
-    if (s[h] == '-' || s[h] == '+')
-    {
-        j[g] = s[h];
-    }
-    else if (s[h] >= 0 && s[h] <= 9)
-    {
-        j[g] = s[h];
-        g++;
-    }
-    else if (s[h] == '\0')
-    {}
-    else ((s[h] >= 'a' && s[h] <= 'z') || (s[h] >= 'A' && s[h] <= 'Z'))
-    {}
-
 }
