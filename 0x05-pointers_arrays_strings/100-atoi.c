@@ -44,5 +44,4 @@ while (x[d] != '\0')
 {
     _putchar(x)
 }
-return (0);
 }
