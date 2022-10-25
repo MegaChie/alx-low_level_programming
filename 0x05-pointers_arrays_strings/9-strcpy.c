@@ -4,6 +4,7 @@
  * line
  * @dest: pointer for the des char
  * @src: pointer for the sor char
+ * return: 0 when success
  */
 char *_strcpy(char *dest, char *src)
 {
