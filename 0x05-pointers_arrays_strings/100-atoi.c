@@ -6,7 +6,7 @@
  */
 int _atoi(char *s)
 {
-int n, a, x = 0, n;
+int n, a, x = 0;
 char d;
 
 for (n = 0; s[n] != '\0'; n++)
