@@ -14,7 +14,7 @@ return (n);
 if (n % 2 == 0)
 {
     int s;
-    for (s = (n / 2) +1; s <= n; s++)
+    for (s = n / 2; s <= n; s++)
     {
         _putchar(str[s]);
     }
