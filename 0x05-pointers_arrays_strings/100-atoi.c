@@ -6,7 +6,7 @@
  */
 int _atoi(char *s)
 {
-int n, a, x = 0;
+int n, a, x = 0, b;
 char d;
 char *r = &d;
 for (n = 0; s[n] != '\0'; n++)
@@ -23,9 +23,9 @@ for (a = 0; s[a] == '-'; a++)
     {
         r[x] = s[a++];
         x++;
-        for (n = a; s[n] >= '0' && n <= '9')
+        for (b = a; s[b] >= '0' && s[b] <= '9'; b++)
         {
-            r[x] = s[n];
+            r[x] = s[b];
             x++;
         }
     }
