@@ -17,11 +17,13 @@ if (n % 2 == 0)
     {
         _putchar(str[s]);
     }
+    _putchar('\n')
 }
 else
 {
     int d = n - 1;
     _putchar(str[d]);
+    _putchar('\n');
 }
-_putchar('\n');
+
 }
