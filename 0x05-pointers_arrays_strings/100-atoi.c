@@ -40,6 +40,9 @@ while (a < n)
     {}
     a++;
 }
-
-return (x);
+while (x[d] != '\0')
+{
+    _putchar(x)
+}
+return (0);
 }
