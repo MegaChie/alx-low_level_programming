@@ -15,15 +15,14 @@ if (n % 2 == 0)
 int s;
 for (s = n / 2; s <= n; s++)
 {
-    _putchar(str[s]);
+_putchar(str[s]);
 }
-    _putchar('\n');
+_putchar('\n');
 }
 else
 {
-    int d = n - 1;
-    _putchar(str[d]);
-    _putchar('\n');
+int d = n - 1;
+_putchar(str[d]);
+_putchar('\n');
 }
-
 }
