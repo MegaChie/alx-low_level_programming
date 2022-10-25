@@ -5,9 +5,13 @@
  */
 void puts2(char *str)
 {
-int a;
+int a, s;
 for (a = 0; str[a] != '\0'; a = a + 2)
 {
-_putchar(str[a]);
 }
-_putchar('\n');}
+for (s = 0; s < a; a = a + 2)
+{
+_putchar(str[s]);
+}
+_putchar('\n');
+}
