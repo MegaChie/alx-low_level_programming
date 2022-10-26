@@ -6,20 +6,14 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-int a = 0, d = 0;
-
-while {s1[a] == s2[a])
+while (*s1 == *s2)
+{
+    if (*s1 == '\0')
     {
-        if (s1[a] > s2[a])
-        {
-            d++;
-        }
-        else if (s2[a] > s2[a])
-        {
-            d--;
-        }
-        a++;
+        return (0);
     }
+    s1++;
+    S2++;
 }
-return (d - a);
+return (*s1 - *s2)
 }
