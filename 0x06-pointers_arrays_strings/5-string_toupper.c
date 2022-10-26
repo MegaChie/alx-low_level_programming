@@ -9,9 +9,9 @@ int s,d;
 
 for (s = 0; a[s] != '\0'; s++)
 {
-if (a[s] >= '65' && a[s] >= '90')
+if (a[s] >= 'a' && a[s] >= 'z')
 {
-_putchar(s[a] + '32');
+_putchar(s[a] + 32);
 }
 else
 {
