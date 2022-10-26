@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * *_strcat - updates the value of the variable
- * the pointer points to to 98
- * @dest: pointer to the variable to update
- * @src: pointer to the variable to update
- * @n: number of charecters to copy
+ * _strncat - concatenates n bytes from a string to another
+ * @dest: destination string
+ * @src: source string
+ * @n: number of bytes of str to concatenate
+ * Return: a pointer to the resulting string dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
