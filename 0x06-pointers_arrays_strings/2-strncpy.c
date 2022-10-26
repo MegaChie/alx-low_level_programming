@@ -15,6 +15,7 @@ for (a = 0; src[a] != '\0'; a++)
 while (s < n)
 {
 dest[a] = src[a];
+s++;
 }
 }
 }
