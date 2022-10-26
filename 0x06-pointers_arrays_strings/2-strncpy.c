@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strcat - updates the value of the variable
+ * *_strncpy - updates the value of the variable
  * the pointer points to to 98
  * @dest: pointer to the variable to update
  * @src: pointer to the variable to update
