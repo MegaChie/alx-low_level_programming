@@ -5,25 +5,27 @@
  */
 char *cap_string(char *a)
 {
-int s,d;
+int s, f;
 
-for (s = 0; a[s] != '\0'; s++)
-{
-if (a[s] == ' ')
-{
-if (a[s++] >= 'a' && a[s++] <= 'z')
-{
-a[s] = a[s] - 32;
-_putchar(a[s]);
-}
-}
-else if (a[0] >= 'a' && a[0] <= 'z')
-{
-a[0] = a[0] - 32;
-_putchar(a[0]);
-}
-else
-{
-_putchar(a[s]);
-}
+    char ch[13] = {' ', '\t', '\n', ',', ';', '.',
+        '!', '?', '"', '(', ')', '{', '}'};
+
+    for (s = 0; s[s] != '\0'; s++)
+    {
+        if (s == 0 && s[s] >= 'a' && s[s] <= 'z')
+            s[s] -= 32;
+
+        for (f = 0; f < 13; f++)
+        {
+            if (s[s] == ch[f])
+            {
+                if (s[s + 1] >= 'a' && s[s + 1] <= 'z')
+                {
+                    s[s + 1] -= 32;
+                }
+            }
+        }
+    }
+
+    return (s);
 }
