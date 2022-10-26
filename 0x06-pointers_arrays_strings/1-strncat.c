@@ -12,7 +12,7 @@ int a, s;
 
 for (a = 0; dest[a] != '\0'; a++)
 {}
-for (s = 0; s < n; s++)
+for (s = 0; s < n && src[s] != '\0'; s++)
 {
 dest[a] = src[s];
 a++;
