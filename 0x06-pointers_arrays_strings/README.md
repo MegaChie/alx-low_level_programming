@@ -1,0 +1,1 @@
+the solution to the ALX C language project named: 0x06. C - More pointers, arrays and strings
