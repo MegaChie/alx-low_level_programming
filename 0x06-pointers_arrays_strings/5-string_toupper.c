@@ -2,7 +2,7 @@
 /**
  *string_toupper - updates the value of the variable
  * @a: pointer to the variable to update
- * return: pointer to variable
+ * Return: the resulting string
  */
 char *string_toupper(char *a)
 {
