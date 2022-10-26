@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *string_toupper - updates the value of the variable
+ **cap_string - updates the value of the variable
  * @a: pointer to the variable to update
  */
 char *cap_string(char *a)
