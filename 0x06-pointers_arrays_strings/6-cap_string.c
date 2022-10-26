@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- **cap_string - updates the value of the variable
- * @s: pointer to the variable to update\
+ * *cap_string - updates the value of the variable
+ * @s: pointer to the variable to update
  * Return: the resulting string
  */
 char *cap_string(char *s)
