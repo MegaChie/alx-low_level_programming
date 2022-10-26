@@ -4,7 +4,7 @@
  * the pointer points to to 98
  * @dest: pointer to the variable to update
  * @src: pointer to the variable to update
- * return: pointer to the resulting string dest
+ * Return: a pointer to the resulting string
  */
 char *_strcat(char *dest, char *src)
 {
