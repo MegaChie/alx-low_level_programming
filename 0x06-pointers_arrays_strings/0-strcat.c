@@ -15,7 +15,6 @@ for (s = 0; src[s] != '\0'; s++)
 {
 dest[a] = src[s];
 a++;
-s++;
 }
 dest[a] = '\0';
 return (dest);
