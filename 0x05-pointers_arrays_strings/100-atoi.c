@@ -3,6 +3,7 @@
  * _atoi - prints n elements of an array of integers, followed by a new
  * line
  * @s: pointer for the sor char
+ * Return: the int converted from the string
  */
 int _atoi(char *s)
 {
