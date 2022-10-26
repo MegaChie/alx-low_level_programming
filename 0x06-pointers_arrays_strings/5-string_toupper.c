@@ -14,4 +14,5 @@ if (a[s] >= 'a' && a[s] >= 'z')
 a[s] = a[s] - 32;
 _putchar(a[s]);
 }
+return (a);
 }
