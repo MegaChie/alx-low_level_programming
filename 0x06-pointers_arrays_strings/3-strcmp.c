@@ -1,37 +1,25 @@
 #include "main.h"
 /**
- * _strcmp - updates the value of the variable
+ * _strcmp - compare two strings
  * @s1: pointer to the variable to update
  * @s2: pointer to the variable to update
  */
 int _strcmp(char *s1, char *s2)
 {
-int a, s = 0, d, n = 0, f = 0;
+int a = 0, d = 0;
 
-for (a = 0; s1[a] != '\0'; a++)
-{}
-for (s; s2[s] != '\0'; s++)
-if (a > s)
-{
-d = a;
+while {s1[a] == s2[a])
+    {
+        if (s1[a] > s2[a])
+        {
+            d++;
+        }
+        else if (s2[a] > s2[a])
+        {
+            d--;
+        }
+        a++;
+    }
 }
-else (s > a)
-{
-d = s;
-}
-while (n > d)
-{
-if (s1[n] > s2[n])
-{
-f++;
-}
-if (s2[n] > s1[n])
-{
-f--;
-}
-if (s1[n] == s2[n])
-{}
-n++;
-}
-return (f);
+return (d - a);
 }
