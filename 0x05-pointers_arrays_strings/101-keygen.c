@@ -1,45 +1,42 @@
-#include <math.h>
+/*
+ *
+ *  gen-passwd.c: generate a random password
+ *
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-void randomPasswordGeneration(int N)
-{
-int i = 0;
-int randomizer = 0;
-srand((unsigned int)(time(NULL)));
-char numbers[10] = "0123456789";
-char letter[] = "abcdefghijklmnoqprstuvwyzx";
-char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
-char symbols[] = "!@#$^&*?";
-char password[100];
-randomizer = rand() % 4;
-for (i = 0; i < N; i++) {
-if (randomizer == 1) {
-password[i] = numbers[rand() % 10];
-randomizer = rand() % 4;
-printf("%c", password[i]);
-}
-else if (randomizer == 2) {
-password[i] = symbols[rand() % 8];
-randomizer = rand() % 4;
-printf("%c", password[i]);
-}
-else if (randomizer == 3) {
-password[i] = LETTER[rand() % 26];
-randomizer = rand() % 4;
-printf("%c", password[i]);
-}
-else {
-password[i] = letter[rand() % 26];
-randomizer = rand() % 4;
-printf("%c", password[i]);
-}
-}
-}
-int main()
-{
-int N = 10;
 
-randomPasswordGeneration(N);
-return 0;
+#define MIN_CHAR 8
+#define MAX_CHAR 1023
+#define BUF_SIZE 1024
+#define PRIME_MOD 937
+
+int main (int argc, char **argv)
+{
+    int N;
+    char password [BUF_SIZE];
+
+    while (1) {
+        // get N
+        while (1) {
+            printf ("Enter number of digits: ");
+            scanf ("%d", &N);
+            if (!N) exit (EXIT_SUCCESS);
+            if (N >= MIN_CHAR && N <= MAX_CHAR)
+                break;
+            printf ("Password should be between %d - %d characters\n", MIN_CHAR, MAX_CHAR); 
+        }
+    
+        time_t now = time (NULL);
+
+        srand ((unsigned int) (now % PRIME_MOD));
+
+        for (int i = 0; i < N; i++) 
+            password [i] = 33 + rand () % 94;
+    
+        password [N] = '\0';
+
+        printf ("password = %s\n", password);
+    }
 }
