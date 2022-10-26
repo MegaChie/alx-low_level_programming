@@ -6,12 +6,15 @@
  * @src: pointer to the variable to update
  * @n: number of charecters to copy
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-int a;
+int s = 0;
 
 for (a = 0; src[a] != '\0'; a++)
 {
+while (s < n)
+{
 dest[a] = src[a];
+}
 }
 }
