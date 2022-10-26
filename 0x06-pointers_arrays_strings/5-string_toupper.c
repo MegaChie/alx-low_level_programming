@@ -11,7 +11,7 @@ for (s = 0; a[s] != '\0'; s++)
 {
 if (a[s] >= 'a' && a[s] >= 'z')
 {
-_putchar(s[a] + 32);
+_putchar(s[a] + '32');
 }
 else
 {
