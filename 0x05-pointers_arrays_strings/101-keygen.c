@@ -11,7 +11,7 @@ char numbers[10] = "0123456789";
 char letter[] = "abcdefghijklmnoqprstuvwyzx";
 char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
 char symbols[] = "!@#$^&*?";
-char password[];
+char password[100];
 randomizer = rand() % 4;
 for (i = 0; i < N; i++) {
 if (randomizer == 1) {
