@@ -2,6 +2,7 @@
 /**
  *string_toupper - updates the value of the variable
  * @a: pointer to the variable to update
+ * return: pointer to variable
  */
 char *string_toupper(char *a)
 {
@@ -12,6 +13,6 @@ for (s = 0; a[s] != '\0'; s++)
 if (a[s] >= 'a' && a[s] >= 'z')
 {
 a[s] = a[s] - 32;
-_putchar(a[s]);
 }
+return (s);
 }
