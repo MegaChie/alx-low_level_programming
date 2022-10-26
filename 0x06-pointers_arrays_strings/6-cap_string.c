@@ -26,5 +26,4 @@ else
 {
 _putchar(a[s]);
 }
-return (s);
 }
