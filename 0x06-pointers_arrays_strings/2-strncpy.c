@@ -8,12 +8,10 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-int a, s;
+int a;
 
 for (a = 0; src[a] != '\0'; a++)
-{}
-for (s = 0; s > n; s++)
 {
-dest[s] = src[a];
+dest[a] = src[a];
 }
 }
