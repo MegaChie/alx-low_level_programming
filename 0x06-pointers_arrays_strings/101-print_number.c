@@ -15,9 +15,10 @@ else
 {
 r = n;
 }
-if (r / 10)
+_putchar(r);
+/*if (r / 10)
 {
 print_number(r / 10);
 _putchar((r % 10) + '0');
-}
+}*/
 }
