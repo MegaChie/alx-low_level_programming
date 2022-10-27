@@ -10,18 +10,16 @@ char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 int i = 0,o = 0;
 
-while (ch[i] != '\0')
+for (i = 0; ch[i] != '\0'; i++)
 {
-while(a[o] != '\0')
+for (o = 0; a[o] != '\0'; o++)
 {
 if (ch[i] == a[o])
 {
 ch[i] = b[o];
 break;
 }
-o++;
 }
-i++;
 }
 return (ch);
 }
