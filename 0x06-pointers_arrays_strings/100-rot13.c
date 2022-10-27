@@ -8,15 +8,14 @@ char *rot13(char *ch);
 {
 char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-int i, o;
-
-for (i = 0; ch[i] != '\0'; i++)
+int i, j;
+for (i = 0; s[i] != '\0'; i++)
+ {
+for (j = 0; a[j] != '\0'; j++)
 {
-for (o = 0; a[o] != '\0'; o++)
+if (s[i] == a[j])
 {
-if (ch[i] == a[o])
-{
-ch[i] = b[o];
+s[i] = b[j];
 break;
 }
 }
