@@ -12,7 +12,7 @@ int i = 0,o = 0;
 
 while (ch[i] != '\0')
 {
-while(ch[o] != '\0')
+while(a[o] != '\0')
 {
 if (ch[i] == a[o])
 {
