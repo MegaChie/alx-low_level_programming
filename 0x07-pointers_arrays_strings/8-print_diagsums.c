@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *  print_chessboard - Fills display with board
- * @a: pointer of raws
+ *  print_diagsums - sum main diagonal elements
+ * @a: pointer of array
+ * @size: size of matrix
  */
 void print_diagsums(int *a, int size)
 {
