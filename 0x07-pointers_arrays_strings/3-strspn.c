@@ -7,17 +7,12 @@
  */
 unsigned int _strspn(char *s, char *accept);
 {
-	while (*s != '\0')
-	{
-		unsigned int count = 0;
+	unsigned int count = o;
 
-		while (*s == *accept)
-		{
-			count++;
-			accept++;
-		}
+	while (*s == *accept)
+	{
+		count++;
 		s++;
 	}
-
 	return (count);
 }
