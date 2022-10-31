@@ -20,6 +20,10 @@ unsigned int _strspn(char *s, char *accept);
 			}
 			accept++;
 		}
+		if (*accept == '\0')
+		{
+			break;
+		}
 		s++;
 	}
 	return (count);
