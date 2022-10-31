@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- *  *_memcpy - change value of variable
- * @dest: buffer array
- * @src: constant byte
- * @n: number of bytes of memory area to fill
- * Return: Pointer to memory area `dest`
+ * _memcpy - chabge value of a variable
+ * @dest: variable to be changes
+ * @src: rewite value of change
+ * @n: number of elements to change
+ * Return: pointer to `dest`
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
@@ -12,13 +12,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	while (i < n)
 	{
-		unsigned int j = 0;
-		while (src[j] != '\0')
-		{
-			dest[j] = src[j];
-			j++;
-		}
-	
+		dest[i]	= src[i];
 		i++;
 	}
 	return (dest);
