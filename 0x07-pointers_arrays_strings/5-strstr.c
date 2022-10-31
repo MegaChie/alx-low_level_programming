@@ -3,7 +3,8 @@
  *  *_strstr - Fills memory with a constant byte
  * @haystack: pointer to where the function check
  * @needle: pointer for checking string
- * Return: Pointer to memory area
+ * Return: Pointer to memory
+ *  area
  */
 char *_strstr(char *haystack, char *needle)
 {
