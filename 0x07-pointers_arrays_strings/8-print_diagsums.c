@@ -6,20 +6,26 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int x = 0, y = 0, sum = 0;
+	int i, sum, sizer;
 
-	while (x < size)
+	i = 0;
+	sum = 0;
+	sizer = size * size;
+	while (i < sizer)
 	{
-		while ( y < size)
-		{
-			if (x == y)
-			{
-				sum = sum + a[x][y]; 
-			}
-			y++;
-		}
-		x++;
+		if (i % (size + 1) == 0)
+			sum += a[i];
+		i++;
 	}
-	printf("%d", sum);
-	return (0);
+	printf("%d, ", sum);
+
+	sum = 0;
+	i = 0;
+	while (i < sizer)
+	{
+		if (i % (size - 1) == 0 && i != (sizer - 1) && i != 0)
+			sum += a[i];
+		i++;
+	}
+	printf("%d\n", sum);
 }
