@@ -5,7 +5,7 @@
  * @accept: the value we look for
  * Return: pointer to value presence
  */
-unsigned int _strspn(char *s, char *accept);
+unsigned int _strspn(char *s, char *accept)
 {
 	int i, j;
 	int count = 0;
