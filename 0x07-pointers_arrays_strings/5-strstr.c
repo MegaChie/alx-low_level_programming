@@ -20,12 +20,12 @@ char *_strstr(char *haystack, char *needle)
 			}
 			d++;
 		}
-		a++;
 		if (needle[s + d] == '\0')
 		{
 			break;
 		}
 		s++;
+		a++;
 	}
 	return (0);
 }
