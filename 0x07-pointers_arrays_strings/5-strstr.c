@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  *  *_strstr - Fills memory with a constant byte
- * @s: pointer to where the function check
- * @accept: pointer for checking string
+ * @haystack: pointer to where the function check
+ * @needle: pointer for checking string
  * Return: Pointer to memory area
  */
 char *_strstr(char *haystack, char *needle)
