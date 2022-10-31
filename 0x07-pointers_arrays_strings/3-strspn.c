@@ -7,7 +7,12 @@
  */
 unsigned int _strspn(char *s, char *accept);
 {
-	int count = 0, i = 0, j;
+	int i;
+	int j;
+	int count;
+
+	i = 0;
+	count = 0;
 
 	while (s[i] != '\0')
 	{
@@ -22,9 +27,7 @@ unsigned int _strspn(char *s, char *accept);
 			j++;
 		}
 		if (accept[j] == '\0')
-		{
 			break;
-		}
 		i++;
 	}
 	return (count);
