@@ -4,6 +4,7 @@
  * @s: pointer to char
  * @b: rewrite value
  * @n: number of rewrites
+ * Return: Pointer to memory area `s`
  */
 char *_memset(char *s, char b, unsigned int n)
 {
