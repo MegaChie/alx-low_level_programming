@@ -1,11 +1,13 @@
 #include "main.h"
 /**
  * _sqrt_recursion - returns the value of x raised to the power of y.
- * @x: number to raise
- * @y: number of power
+ * helpFun - help in calculation
+ * @num: number.
+ * @n: number to find sqrt of.
+ * @pSqrt: poissible sqrt of number.
  * Return: calculation result
  */
-int helperFunction(int num, int pSqrt)
+int helpFun(int num, int pSqrt)
 {
 	if ((pSqrt * pSqrt) == num)
 	{
@@ -16,7 +18,7 @@ int helperFunction(int num, int pSqrt)
 		if ((pSqrt * pSqrt) > num)
 			return (-1);
 		else
-			return (helperFunction(num, pSqrt + 1));
+			return (helpFun(num, pSqrt + 1));
 
 	}
 }
@@ -25,5 +27,5 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 		return (-1);
 	else
-		return (helperFunction(n, 0));
+		return (helpFun(n, 0));
 }
