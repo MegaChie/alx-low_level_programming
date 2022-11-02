@@ -1,11 +1,13 @@
 #include "main.h"
 /**
- * _sqrt_recursion - returns the value of x raised to the power of y.
- * helpFun - checks if sqrt of number exists
- * @num: number.
- * @n: number to find sqrt of.
- * @pSqrt: poissible sqrt of number.
- * Return: calculation result
+ *helperFunction - checks if sqrt of number exists
+ *@num: number.
+ *@pSqrt: poissible sqrt of number.
+ *Return: sqrt of number ot -1 for error.
+ *_sqrt_recursion - returns the natural square root of a number.
+ *@n: number to find sqrt of.
+ *Return: squareroot of n.
+ *-1 if n does not have a natural sqrt.
  */
 int helpFun(int num, int pSqrt)
 {
