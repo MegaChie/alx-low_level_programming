@@ -22,20 +22,17 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	else
+	else if ((n ^ 2) == temp)
 	{
-		if ((n ^ 2) == temp)
-		{
-			return (n);
-		}
-		else if ((n ^ 2) != temp)
-		{
-			_sqrt_recursion(n - 1);
-		}
-		else
-		{
-			return (-1);
-		}
+		return (n);
+	}
+	else if ((n ^ 2) == temp)
+	{
+		return (n);
+	}
+	else if ((n ^ 2) != temp)
+	{
+		_sqrt_recursion(n - 1);
 	}
 	else
 	{
