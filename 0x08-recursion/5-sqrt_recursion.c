@@ -23,14 +23,14 @@ int _sqrt_recursion(int n)
 		{
 			return (temp);
 		}
-		else if ((n * n) != temp)
+		else
 		{
 			return (_sqrt_recursion(n - 1));
 		}
-		else
-		{
-			return (-1);
-		}
+	}
+	else
+	{
+		return (-1);
 	}
 	
 }
