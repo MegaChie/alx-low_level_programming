@@ -27,7 +27,7 @@ int _sqrt_recursion(int n)
 	{
 		return x;
 	}
-	else if (x ^ 2)
+	else if ((x ^ 2) != n)
 	{
 		_sqrt_recursion(n);
 	}
