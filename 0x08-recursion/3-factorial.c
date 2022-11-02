@@ -13,7 +13,7 @@ int factorial(int n)
 	}
 	else if (n == 0)
 	{
-		retrutn (1);
+		return (1);
 	}
 	else
 	{
