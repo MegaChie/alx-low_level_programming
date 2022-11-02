@@ -22,13 +22,16 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	else if ((temp ^ 2) == n)
+	else if (n > 0)
 	{
-		return (temp);
-	}
-	else if ((temp ^ 2) != n)
-	{
-		return (_sqrt_recursion(temp + 1));
+		else if ((temp ^ 2) == n)
+		{
+			return (temp);
+		}
+		else if ((temp ^ 2) != n)
+		{
+			return (_sqrt_recursion(temp + 1));
+		}
 	}
 	else
 	{
