@@ -5,32 +5,25 @@
  * @y: number of power
  * Return: calculation result
  */
-int _sqrt_recursion(int n)
+int helperFunction(int num, int pSqrt)
 {
-	int temp = n;
-
-	if (n < 0)
+	if ((pSqrt * pSqrt) == num)
 	{
-		return (-1);
-	}
-	else if (n == 1)
-	{
-		return (1);
-	}
-	else if (n > 0)
-	{
-		if ((n * n )== temp)
-		{
-			return (temp);
-		}
-		else
-		{
-			return (_sqrt_recursion(temp - 1));
-		}
+		return (pSqrt);
 	}
 	else
 	{
-		return (-1);
+		if ((pSqrt * pSqrt) > num)
+			return (-1);
+		else
+			return (helperFunction(num, pSqrt + 1));
+
 	}
-	
+}
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+		return (-1);
+	else
+		return (helperFunction(n, 0));
 }
