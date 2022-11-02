@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _sqrt_recursion - returns the value of x raised to the power of y.
- * helpFun - help in calculation
+ * helpFun - checks if sqrt of number exists
  * @num: number.
  * @n: number to find sqrt of.
  * @pSqrt: poissible sqrt of number.
