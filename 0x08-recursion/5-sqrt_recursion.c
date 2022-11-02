@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * helperFunction - checks if sqrt of number exists
+ * helpFun - checks if sqrt of number exists
  * @num: number.
  * @pSqrt: poissible sqrt of number.
  * Return: sqrt of number ot -1 for error.
