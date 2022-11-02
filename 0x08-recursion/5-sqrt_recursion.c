@@ -24,7 +24,7 @@ int _sqrt_recursion(int n)
 	}
 	else if (n > 0)
 	{
-		else if ((temp ^ 2) == n)
+		if ((temp ^ 2) == n)
 		{
 			return (temp);
 		}
