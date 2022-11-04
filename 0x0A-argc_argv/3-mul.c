@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int mull, num;
+	int mull = 1, num;
 	if (argc < 3)
 	{
 		printf("error\n");
@@ -18,5 +18,6 @@ int main(int argc, char *argv[])
 	{
 		mull = mull * atoi(argv[num]);
 	}
+	printf("%d\n", mull);
 	return (0);
 }
