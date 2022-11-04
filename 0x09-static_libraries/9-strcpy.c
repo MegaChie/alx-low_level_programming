@@ -1,22 +1,22 @@
 #include "main.h"
+
 /**
- * *_strcpy - prints n elements of an array of integers, followed by a new
- * line
- * @dest: pointer for the des char
- * @src: pointer for the sor char
- * Return: the pointer to dest
+ * _strcpy - Copiar el contenido de uno a otra variable
+ * @dest: This is destiny
+ * @src: This is the copia
+ *
+ * Return: This return copy
  */
 char *_strcpy(char *dest, char *src)
 {
-int n, s;
+	char *start = dest;
 
-for (n = 0; src[n] != '\0'; n++)
-{
-}
-for (s = 0; s < n; s++)
-{
-dest[s] = src[s];
-}
-dest[s] = '\0';
-return (dest);
+	while (*src != '\0')
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
+	*dest = '\0';
+	return (start);
 }

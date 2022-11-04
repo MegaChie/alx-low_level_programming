@@ -1,24 +1,31 @@
 #include "main.h"
+
 /**
- * *_strchr - check presence of a value of a variable
- * @s: place to check the presense
- * @c: the value we look for
- * Return: pointer to value presence
- */
+ * _strchr - Locates a character in a string
+ * @s: String
+ * @c: Character to search
+ * Return: Pointer to the first occurrence of the character c in the string s
+ **/
+
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0')
+
+	while (*s != '\0') /*Declaring WHILE*/
 	{
-		if (*s == c)
+		if (*s == c) /*if s ==  c*/
 		{
-			return (s);
+			return (s); /*return s*/
 		}
-		else if (*(s + 1) == c)
-		{
-			return (s + 1);
-		}
-		s++;
+
+		++s;
 	}
 
-	return (s + 1);
+	if (*s == c)
+	{
+		return (s);
+
+	}
+
+
+	return (0);/* values null*/
 }

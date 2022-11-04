@@ -1,29 +1,29 @@
 #include "main.h"
+#include <stdio.h>
 /**
- *  *_strpbrk - Fills memory with a constant byte
- * @s: pointer to where the function check
- * @accept: pointer for checking string
- * Return: Pointer to memory area
+ * _strpbrk - prints the consecutive caracters of s1 that are in s2.
+ * @s: source string
+ * @accept: searching string
+ *
+ * Return: new string.
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j;
-	char *place;
+	unsigned int i, j;
 
-	i = 0;
-	while (s[i] != '\0')
+	for (i = 0; *(s + i); i++)
 	{
-		j = 0;
-		while (accept[j] != '\0')
+		for (j = 0; *(accept + j); j++)
 		{
-			if (accept[j] == s[i])
+			if (*(s + i) == *(accept + j))
 			{
-				place = &s[i];
-				return (place);
+				break;
 			}
-			j++;
 		}
-		i++;
+		if (*(accept + j) != '\0')
+		{
+			return (s + i);
+		}
 	}
 	return (0);
 }

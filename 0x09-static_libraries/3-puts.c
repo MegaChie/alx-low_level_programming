@@ -1,17 +1,20 @@
 #include "main.h"
+
 /**
- * _puts - swaps the values of two integers
- * @str: pointer to first value
+ * _puts - Write a function that prints a string, followed by a new line, to
+ * stdout.
+ *
+ * @str: This is my input string
+ *
  */
+
 void _puts(char *str)
 {
-int n;
+	int index;
 
-for (n = 0; str[n] != '\0'; n++)
-
-{
-
-_putchar(str[n]);
-}
-_putchar('\n');
+	for (index = 0; str[index] != '\0'; index++)
+	{
+		_putchar(str[index]);
+	}
+	_putchar('\n');
 }

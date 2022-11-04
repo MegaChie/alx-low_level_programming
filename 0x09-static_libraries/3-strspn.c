@@ -1,41 +1,24 @@
 #include "main.h"
 /**
- * _strspn - check presence of a value of a variable
- * @s: place to check the presense
- * @accept: the value we look for
- * Return: pointer to value presence
+ * _strspn - prints the consecutive caracters of s1 that are in s2.
+ * @s: source string
+ * @accept: searching string
+ *
+ * Return: new string.
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j;
-	int count = 0;
-	char *str1, *str2;
+	unsigned int i, j;
 
-	str1 = s;
-	str2 = accept;
-
-	i = 0;
-	while (str1[i] != '\0')
+	for (j = 0; *(s + j); j++)
 	{
-		j = 0;
-		while (str2[j] != '\0')
+		for (i = 0; *(accept + i); i++)
 		{
-			if (str2[j] == str1[i])
-			{
-				count++;
+			if (*(s + j) == *(accept + i))
 				break;
-			}
-
-			j++;
 		}
-
-		if (s[i] != accept[j])
-		{
-			break;
-		}
-
-		i++;
+	if (*(accept + i) == '\0')
+		break;
 	}
-
-	return (count);
+	return (j);
 }
