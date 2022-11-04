@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
  * main - a program that prints its name, followed by a new line.
- * @args: argument count
+ * @argc: argument count
  * @argv: arrgument vector
  * Return: This return to 0
  */
-int main(int args, char *argv[])
+int main(int argc, char *argv[])
 {
 	int a;
 
