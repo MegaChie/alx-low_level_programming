@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 	int mull = 1, num;
 	if (argc < 3)
 	{
-		printf("error\n");
+		printf("Error\n");
 		return (1);
 	}
 	for (num = 1; num < argc; num++)
