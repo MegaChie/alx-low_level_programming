@@ -8,13 +8,15 @@
  */
 int main(int argc, char *argv[])
 {
-	int mull;
+	int mull, num;
 	if (argc < 3)
 	{
 		printf("error\n");
 		return (1);
 	}
-	mull = atoi(argv[1]) * atoi(argv[2]);
-	printf("%d", mull);
+	for (num = 1; num < argc; num++)
+	{
+		mull = mull * atoi(argv[num]);
+	}
 	return (0);
 }
