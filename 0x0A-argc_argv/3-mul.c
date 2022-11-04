@@ -9,6 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int mull = 1, num;
+	
 	if (argc < 3)
 	{
 		printf("Error\n");
