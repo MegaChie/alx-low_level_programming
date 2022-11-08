@@ -26,6 +26,7 @@ char *argstostr(int ac, char **av)
 	{
     	x = strcpy(x, av[i]);
     	x = strcat(x, " ");
+    	_putchar('\n');
 	}
 	return (x);
 }
