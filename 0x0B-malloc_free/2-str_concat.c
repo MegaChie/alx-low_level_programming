@@ -11,14 +11,14 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *x;
+	unsigned int a = 1;
 
-	if (s2 == NULL)
+	for (; a < 3; a++)
 	{
-		s2 = "";
-	}
-	if  (s1 == NULL)
-	{
-		s1 = "";
+		if (sa == NULL)
+		{
+			sa = "";
+		}
 	}
 	else
 	{
