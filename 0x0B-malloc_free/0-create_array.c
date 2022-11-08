@@ -3,7 +3,7 @@
 
 char *create_array(unsigned int size, char c)
 {
-	int a;
+	unsigned int a;
 	char *x = malloc(sizeof(char) * size);
 
 	for (a = 0; a < size; a++)
