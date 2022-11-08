@@ -14,4 +14,5 @@ char **strtow(char *str)
       printf( " %s\n", token );
       token = strtok(NULL, " ");
    }
+   return (str);
 }
