@@ -11,22 +11,25 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i;
+	int i, c = 0;
 	char *x;
 
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
-	x = malloc(sizeof(char) * (strlen(*av) + 1));
+	x = malloc(sizeof(char) * (strlen(*av) - 1));
 	if (x == NULL)
 	{
 		return (NULL);
 	}
 	for(i = 1; i < ac; i++)
 	{
-    	x = strcpy(x, av[i]);
-    	x = strcat(x, " ");
+		while (c < i)
+		{
+	    	x = strcpy(x, av[i]);
+	    	x = strcat(x, " ");
+    	}
 
 	}
 	return (x);
