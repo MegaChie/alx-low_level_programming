@@ -24,8 +24,8 @@ char *argstostr(int ac, char **av)
 	}
 	for(i = 1; i < ac; i++)
 	{
-    	x = strcpy(str, arg[i]);
-    	x = strcat(str, " ");
+    	x = strcpy(x, av[i]);
+    	x = strcat(x, " ");
 	}
 	return (x);
 }
