@@ -27,11 +27,11 @@ char *argstostr(int ac, char **av)
 		j = 0;
 		while (av[i][j])
 		{
-			arg[k] = av[i][j];
+			x[i] = av[i][j];
 			j++;
 			k++;
 		}
-		arg[k] = '\n';
+		x[i] = '\n';
 		k++;
 		i++;
 	}
