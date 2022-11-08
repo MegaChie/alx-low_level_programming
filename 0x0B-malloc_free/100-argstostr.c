@@ -10,7 +10,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i;
+	int i, j;
 	char *x;
 
 	if (ac == 0 || av == NULL)
@@ -22,10 +22,18 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
-	for(i = 1; i < ac; i++)
+	while (i < ac)
 	{
-    	x = strcpy(x, av[i]);
-    	x = strcat(x, " ");
+		j = 0;
+		while (av[i][j])
+		{
+			arg[k] = av[i][j];
+			j++;
+			k++;
+		}
+		arg[k] = '\n';
+		k++;
+		i++;
 	}
 	return (x);
 }
