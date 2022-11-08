@@ -10,16 +10,16 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
+	if (x == NULL)
+	{
+		return (NULL);
+	}
 	else
 	{
 		for (a = 0; a < size; a++)
 		{
 			x[a] = c;
 		}
-	}
-	if (x == NULL)
-	{
-		return (NULL);
 	}
 	return (x);
 }
