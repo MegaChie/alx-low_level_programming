@@ -6,6 +6,7 @@
  * integers.
  * @width: number of colomns
  * @height: number of raws
+ * return: pointer to array
  */
 int **alloc_grid(int width, int height)
 {
