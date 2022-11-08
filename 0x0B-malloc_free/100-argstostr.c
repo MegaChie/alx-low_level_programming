@@ -8,6 +8,7 @@
  * alloc_grid function. integers.
  * @ac: number of arguments
  * @av: arry of arrguments
+ * Return: pointer or NULL
  */
 char *argstostr(int ac, char **av)
 {
