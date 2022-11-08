@@ -22,6 +22,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+	if (nstr == NULL)
+	{
+		return (NULL);
+	}
 	for (d = 0; d < s; d++)
 	{
 		x[d] = str[d];
