@@ -9,7 +9,7 @@
 * Return: NULL if it fails or
 * Pointer to array.
 */
-char char *_strdup(char *str)
+char *_strdup(char *str)
 {
 	unsigned int a, s = strlen(str);
 	char *x = malloc(sizeof(char) * s);
