@@ -17,5 +17,9 @@ char *create_array(unsigned int size, char c)
 			x[a] = c;
 		}
 	}
+	if (x == NULL)
+	{
+		return (NULL);
+	}
 	return (x);
 }
