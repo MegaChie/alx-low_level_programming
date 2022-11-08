@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "main.h"
 /**
  * argstostr-  concatenates all the arguments of your program.
  * alloc_grid function. integers.
@@ -10,7 +11,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i, j;
+	int i;
 	char *x;
 
 	if (ac == 0 || av == NULL)
@@ -22,18 +23,11 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
-	while (i < ac)
+	for(i = 1; i < ac; i++)
 	{
-		j = 0;
-		while (av[i][j])
-		{
-			x[i] = av[i][j];
-			j++;
-			k++;
-		}
-		x[i] = '\n';
-		k++;
-		i++;
+    	x = strcpy(x, av[i]);
+    	x = strcat(x, " ");
+
 	}
 	return (x);
 }
