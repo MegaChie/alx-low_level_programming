@@ -11,14 +11,14 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *x;
-	unsigned int a = 1;
 
-	for (; a < 3; a++)
+	if (s1 == NULL)
 	{
-		if (sa == NULL)
-		{
-			sa = "";
-		}
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
 	}
 	x = malloc(strlen(s1) + strlen(s2) + 1);
 	strcpy(x, s1);
