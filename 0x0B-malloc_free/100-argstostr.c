@@ -13,7 +13,7 @@ char *argstostr(int ac, char **av)
 	int i;
 	char *x;
 
-	if (ac == NULL || av == NULL)
+	if (ac ==  || av == NULL)
 	{
 		return (NULL);
 	}
@@ -22,7 +22,7 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
-	for(i = 1; i < argc; i++)
+	for(i = 1; i < ac; i++)
 	{
     	x = strcpy(str, arg[i]);
     	x = strcat(str, " ");
