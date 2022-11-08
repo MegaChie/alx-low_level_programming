@@ -8,7 +8,7 @@ char *create_array(unsigned int size, char c)
 
 	for (a = 0; a < size; a++)
 	{
-		x[a] = char c;
+		x[a] = c;
 	}
 	return (x);
 }
