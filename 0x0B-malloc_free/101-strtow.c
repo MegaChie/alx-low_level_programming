@@ -1,18 +1,70 @@
-#include <string.h>
+#include <stdlib.h>
 #include <stdio.h>
 /**
- * argstostr-  concatenates all the arguments of your program.
- * alloc_grid function. integers.
- * @ac: number of arguments
- * @av: arry of arrguments
+ * help - counts no of words in a given string
+ * @s: pointer to the string
+ * Return: No. of words in the string (int)
+ */
+int help(char *s)
+{
+	int flag = 0, c, count = 0;
+
+	for (c = 0; s[c] != '\0'; c++)
+	{
+		if (s[c] == ' ')
+			flag = 0;
+		else if (flag == 0)
+		{
+			flag = 1;
+			count++;
+		}
+	}
+
+	return (count);
+}
+/**
+ * **strtow - splits a string into words
+ * @str: string to split
  * Return: pointer or NULL
  */
 char **strtow(char *str)
 {
-	char * token = strtok(str, " ");
-   while( token != NULL ) {
-      printf( " %s\n", token );
-      token = strtok(NULL, " ");
-   }
-   return (*str);
+	char **matrix, *tmp;
+	int i, k = 0, len = 0, words, c = 0, start, end;
+
+	while (*(str + len))
+		len++;
+	words = help(str);
+	if (words == 0)
+		return (NULL);
+
+	matrix = (char **) malloc(sizeof(char *) * (words + 1));
+	if (matrix == NULL)
+		return (NULL);
+
+	for (i = 0; i <= len; i++)
+	{
+		if (str[i] == ' ' || str[i] == '\0')
+		{
+			if (c)
+			{
+				end = i;
+				tmp = (char *) malloc(sizeof(char) * (c + 1));
+				if (tmp == NULL)
+					return (NULL);
+				while (start < end)
+					*tmp++ = str[start++];
+				*tmp = '\0';
+				matrix[k] = tmp - c;
+				k++;
+				c = 0;
+			}
+		}
+		else if (c++ == 0)
+			start = i;
+	}
+
+	matrix[k] = NULL;
+
+	return (matrix);
 }
