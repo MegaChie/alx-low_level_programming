@@ -7,46 +7,74 @@
  */
 int **alloc_grid(int width, int height)
 {
+	int i, j, a, s;
 	int **x;
-	int a = 0, s = 0, i = 0, j = 0;
 
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
-	else 
+	else
 	{
 		x = (int **) malloc(height * sizeof(int *));
 		if (!x)
 		{
-			free (x);
+			free(x);
 			return (NULL);
 		}
-		while (a < height)
+		for (i = 0; i < height; i++)
 		{
-			x[i] = (int *) malloc(width * sizeof(int *));
+			x[i] = (int *) malloc(width * sizeof(int));
 			if (!x[i])
 			{
-				while (s <= a)
-				{
-					free(x[s]);
-					s++;
-				}
+				for (j = 0; j <= i; j++)
+					free(x[j]);
 				free(x);
 				return (NULL);
 			}
-			a++;
 		}
-		while (i < height)
+		for (a = 0; a < height; a++)
 		{
-			while (j < width)
+			for (s = 0; s < width; s++)
 			{
-				x[i][j] = 0;
-				j++;
+				x[a][s] = 0;
 			}
-			i++;
 		}
 		return (x);
+	}
+}int i, j, a, s;
+	int **x;
 
+	if (width <= 0 || height <= 0)
+	{
+		return (NULL);
+	}
+	else
+	{
+		x = (int **) malloc(height * sizeof(int *));
+		if (!x)
+		{
+			free(x);
+			return (NULL);
+		}
+		for (i = 0; i < height; i++)
+		{
+			x[i] = (int *) malloc(width * sizeof(int));
+			if (!x[i])
+			{
+				for (j = 0; j <= i; j++)
+					free(x[j]);
+				free(x);
+				return (NULL);
+			}
+		}
+		for (a = 0; a < height; a++)
+		{
+			for (s = 0; s < width; s++)
+			{
+				x[a][s] = 0;
+			}
+		}
+		return (x);
 	}
 }
