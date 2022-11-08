@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "main.h"
 /**
  * argstostr-  concatenates all the arguments of your program.
  * alloc_grid function. integers.
