@@ -20,11 +20,9 @@ char *str_concat(char *s1, char *s2)
 			sa = "";
 		}
 	}
-	else
-	{
-		x = malloc(strlen(s1) + strlen(s2) + 1);
-	    strcpy(x, s1);
-	    strcat(x, s2);
-	}
+	x = malloc(strlen(s1) + strlen(s2) + 1);
+	strcpy(x, s1);
+	strcat(x, s2);
+	
 	return (x);
 }
