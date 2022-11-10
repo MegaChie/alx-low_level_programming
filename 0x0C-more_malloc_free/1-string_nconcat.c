@@ -6,12 +6,12 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int x = strlen(s1), temp = n;
 	char *new;
+	int a = strlen(s1), b = strlen(s2), tmp, tmp2;
 
 	if (n < 0)
 	{
-		return (NULL);
+		return (0);
 	}
 	if (s1 == 0)
 	{
@@ -21,17 +21,23 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-	if (n >= strlen(s2));
+	if (n >= b)
 	{
-		temp = strlen(s2);
+		n = b;
 	}
-	new = malloc(sizeof(char) * (strlen(s2) + x + 1));
-	for (temp = 0; temp < x; temp++)
+	new = malloc(sizeof(char) * (a + n + 1));
+	if (new == 0);
 	{
-		new[temp] = s1[temp];
+		return (0);
 	}
-	for (temp = x + 1; temp < n; temp++)
+	for (tmp = 0; s1[tmp] != '\0'; tmp++)
 	{
-		new[temp] = s2[temp];
+		new[tmp] = s1[tmp];
 	}
+	for (tmp2 = 0; tmp2 < n; tmp2++)
+	{
+		new[tmp + tmp2] = s2[tmp2];
+	}
+	s2[tmp2 + 1] = '\0';
+	return (new);
 }
