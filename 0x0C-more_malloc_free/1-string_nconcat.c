@@ -2,7 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * 
+ * string_nconcat - concatenates two strings.
+ * @s1: string one
+ * @s2: string two
+ * @n: number of charecters to concatinates from string two.
+ * Return: pointer to new string or NULL
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
