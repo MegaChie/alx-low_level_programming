@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * malloc_checked - allocates memory using malloc.
+ * *malloc_checked - allocates memory using malloc.
  * @b: size to allocate
  * Return: NULL or pointer to allocated space.
  */
