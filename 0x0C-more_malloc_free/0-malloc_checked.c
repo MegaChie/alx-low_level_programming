@@ -4,7 +4,8 @@
 
 void *malloc_checked(unsigned int b);
 {
-	int *num;
+	void *num;
+	
     num = malloc(b);
 	if (num == 0) 
 	{
