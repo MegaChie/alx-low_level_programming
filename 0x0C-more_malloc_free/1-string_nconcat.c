@@ -7,7 +7,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *new;
-	int a = strlen(s1), b = strlen(s2), tmp, tmp2;
+	unsigned int a = strlen(s1), b = strlen(s2), tmp, tmp2;
 
 	if (n < 0)
 	{
@@ -25,7 +25,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		n = b;
 	}
-	new = malloc(sizeof(*new) * (a + n + 1));
+	new = malloc(sizeof(char) * (a + n + 1));
 	if (new == 0);
 	{
 		return (0);
