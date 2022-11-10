@@ -18,7 +18,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 	for (a = 0; a < (nmemb * size); a++)
 	{
-		*((char *)(p) + i) = 0;
+		*((char *)(mat) + a) = 0;
 	}
 	return (mat);
 }
