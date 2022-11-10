@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
+ * array_range - create an array that ontain all the values from min
+ * (included) to max (included), ordered from min to max
+ * @min: start value
+ * @max: end value
+ * Return: 0 or pointer
  */
 int *array_range(int min, int max)
 {
