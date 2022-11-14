@@ -6,7 +6,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	int a,s = strlen(name),d = strlen(owner);
-	struct dog *n_dog = NLL;
+	struct dog *n_dog = NULL;
 
 	n_dog = malloc(sizeof(struct dog));
 	if (n_dog == 0)
