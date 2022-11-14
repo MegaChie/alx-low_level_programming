@@ -1,4 +1,11 @@
-#ifndef PI
-#define PI 3.14159265359
-
-#endif
+#include<stdlib.h>
+#include<stdlio.h>
+/**
+ * main - prints the name of the file it was compiled from, followed
+ * by a new line.
+ */
+int main(void)
+{
+	printf("%s\n", __FILE__);
+	return (0);
+}
