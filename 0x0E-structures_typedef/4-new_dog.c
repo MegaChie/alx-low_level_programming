@@ -15,14 +15,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(n_dog);
 		return (0);
 	}
-	n_dog->name = malloc(s + 1);
+	n_dog->name = malloc(s);
 	if (n_dog->name == 0)
 	{
 		free(n_dog->name);
 		free(n_dog);
 		return (0);
 	}
-	n_dog->owner = malloc(d + 1);
+	n_dog->owner = malloc(d);
 	if (n_dog->owner == 0)
 	{
 		free(n_dog->owner);
