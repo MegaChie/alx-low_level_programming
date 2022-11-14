@@ -1,5 +1,4 @@
 #ifndef STRTYP
-#define STRTYP
 /**
  * struct dog - define structure
  * @name: name of dog
