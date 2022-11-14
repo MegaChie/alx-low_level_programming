@@ -3,6 +3,11 @@
 #include<stdlib.h>
 #include "dog.h"
 /**
+ * new_dog - a function that creates a new dog.
+ * @name: new dog's name
+ * @age: age of new dog
+ * @owner: the owner of the new dog
+ * Return: pointer to new dog or 0
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
