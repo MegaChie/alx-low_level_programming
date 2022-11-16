@@ -1,6 +1,6 @@
 int main(int argc, char *argv[])
 {
-	int a = 0, d = 0, val = 0;
+	int a = 0, b = 0, val = 0;
 	char s;
 
 	if (argc != 4)
@@ -21,8 +21,8 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	a = atoi(argv[1]);
-	d = atoi(argv[3]);
-	val = (get_op_func(argv[2]))(a, d);
+	b = atoi(argv[3]);
+	val = (get_op_func(argv[2]))(a, b);
 	printf("%d\n", val);
 	return (0);
 }
