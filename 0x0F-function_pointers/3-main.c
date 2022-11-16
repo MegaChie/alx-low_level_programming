@@ -1,3 +1,10 @@
+#include "3-calc.h"
+/**
+ * main - check arguments
+ * @argc: argument count
+ * @argv: argument vector.
+ * Return: error
+ */
 int main(int argc, char *argv[])
 {
 	int a = 0, b = 0, val = 0;
