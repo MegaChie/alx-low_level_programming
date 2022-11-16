@@ -1,7 +1,7 @@
-ifndef calc
-#define calc
-#include <stdio.h>
+#ifndef calc_h
+#define calc_h
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * struct op - Struct op
  * @op: The operator
