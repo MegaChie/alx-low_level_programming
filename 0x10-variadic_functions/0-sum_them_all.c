@@ -3,15 +3,14 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list ap;
-	int i, sum;
+	va_list values;
+	unsigned int a, sum = 0;
 
-	va_start (ap, count);
-	sum = 0;
-	for (i = 0; i < count; i++)
+	va_start(values, n);
+	for (a = 0; a < n; a++)
 	{
-		sum += va_arg (ap, int);
+		sum += va_arg(values, int);
 	}
-	va_end (ap);
-	return sum;
+	va_end(values);
+	return (sum);
 }
