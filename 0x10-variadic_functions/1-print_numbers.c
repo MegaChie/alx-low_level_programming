@@ -6,7 +6,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list num;
 	unsigned int index;
 
-	va_strt(num, n);
+	va_start(num, n);
 	for (index = 0; index < n; index++)
 	{
 		printf("%d", va_arg(num, int));
