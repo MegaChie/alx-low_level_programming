@@ -6,10 +6,11 @@
 size_t print_listint(const listint_t *h)
 {
 	size_t a = 0;
-	while(node != NULL)
+	const listint_t *place = h;
+	while(place != NULL)
     {
-		printf("%d ",node->data);
-		node = node->next;
+		printf("%d ",place->data);
+		place = place->next;
 		printf("\n");
 		a++;
     }
