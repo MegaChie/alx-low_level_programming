@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
- * add_nodeint_end - creat a new head.
+ * add_nodeint_end - creat a new tail.
  * @head: pointer to head
- * @n: new value of new head
- * Return: pointer to new head
+ * @n: new value of new tail
+ * Return: pointer to new tail
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
