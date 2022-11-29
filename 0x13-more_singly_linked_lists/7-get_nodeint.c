@@ -1,6 +1,8 @@
 #include "lists.h"
 /**
- * 
+ * get_nodeint_at_index - find if node exists in linked list and give a pointer to it.
+ * @head: pointer to list
+ * @index: number of node to be found in the linked list
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
