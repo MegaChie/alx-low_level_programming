@@ -30,4 +30,5 @@ listint_t *find_listint_loop(listint_t *head)
 		nodeTwo = (nodeTwo->next)->next;
 	}
 	return (0);
+	
 }
