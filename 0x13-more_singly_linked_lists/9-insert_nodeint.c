@@ -2,7 +2,6 @@
 /**
  * insert_nodeint_at_index - insert node at a certain place of list.
  * @head: pointer to linked list
- * @index: insertion place
  * @n: value of insertion
  * @idx: index of list
  * Return: 0 or pointer to added node
