@@ -7,7 +7,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	int count = strlen(b), place = 0, decrease;
 
-	if (b == 0)
+	if (!b)
 	{
 		return (0);
 	}
