@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * 
+ * get_bit - shows bit at index value.
+ * @n: number to find bit in
+ * @index: the place of bit to show
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
