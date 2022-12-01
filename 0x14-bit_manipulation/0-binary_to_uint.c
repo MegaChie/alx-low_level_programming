@@ -15,7 +15,6 @@ unsigned int binary_to_uint(const char *b)
 	{
 		return (1);
 	}
-	if ()
 	for (;place < count ; place++)
 	{
 		if (b[place] != 0 && b[place] != 1)
