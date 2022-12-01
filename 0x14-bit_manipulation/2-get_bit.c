@@ -3,7 +3,7 @@
  * get_bit - shows bit at index value.
  * @n: number to find bit in
  * @index: the place of bit to show
- * return: bit at index value or -1
+ * Return: bit at index value or -1
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
