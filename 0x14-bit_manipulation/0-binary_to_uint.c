@@ -22,10 +22,9 @@ unsigned int binary_to_uint(const char *b)
 		}
 	}
 	count--;
-	for (place = 0; b[place] != '\0'; place++)
+	for (place = 0; b[place] != '\0'; place++, count--)
 	{
 		value = value + b[place] * (2 ^ count);
-		count--;
 	}
 	return (value);
 }
