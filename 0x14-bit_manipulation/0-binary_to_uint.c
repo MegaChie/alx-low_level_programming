@@ -5,25 +5,23 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int count = strlen(b), place;
-	char value;
+	int count = strlen(b), place = 0;
 
 	if (b == 0)
 	{
 		return (0);
 	}
-	for (place = 0;place < count; place++)
+	for (;place < count ; place++)
 	{
 		if (b[place] != 0 && b[place] != 1)
 		{
 			return (0);
 		}
 	}
-	for (place = 0;place < count; place++)
+	for (;place < count; place++)
 	{
-	value[place] = b[place] * count;
+		_putchar(b[place] * count);
 		count--;
-		_putchar(value[place]);
 	}
 	return (0);
 }
