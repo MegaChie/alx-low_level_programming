@@ -17,6 +17,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[place] != 0 && b[place] != 1)
 		{
 			return (0);
+			break;
 		}
 	}
 	decrease = count;
