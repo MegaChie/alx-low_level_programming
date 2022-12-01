@@ -1,0 +1,21 @@
+#include "main.h"
+/**
+ * 
+ */
+int get_bit(unsigned long int n, unsigned int index)
+{
+	unsigned int place;
+
+	if (n == 0)
+	{
+		return (0);
+	}
+	for (place = 0; place <= index; place++)
+	{
+		if (place == index)
+		{
+			return (n & 1);
+		}
+	}
+	return (-1);
+}
