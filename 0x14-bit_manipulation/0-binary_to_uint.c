@@ -21,7 +21,7 @@ unsigned int binary_to_uint(const char *b)
 	}
 	for (;place < count; place++)
 	{
-		_putchar('%u', b[place] * count);
+		_putchar(b[place] * count);
 		count--;
 	}
 }
