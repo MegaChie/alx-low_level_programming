@@ -20,7 +20,7 @@ unsigned int binary_to_uint(const char *b)
 	}
 	for (;place < count; place++)
 	{
-		if (d[place] == '0')
+		if (b[place] == '0')
 		{
 			_putchar('0');
 			count--;
