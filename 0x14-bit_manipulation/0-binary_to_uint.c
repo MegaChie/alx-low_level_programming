@@ -7,13 +7,9 @@ unsigned int binary_to_uint(const char *b)
 {
 	int count = strlen(b), place = 0;
 
-	if (b == '0' || b == NULL)
+	if (b == 0)
 	{
 		return (0);
-	}
-	if (b == '1')
-	{
-		return (1);
 	}
 	for (;place < count ; place++)
 	{
@@ -24,8 +20,16 @@ unsigned int binary_to_uint(const char *b)
 	}
 	for (;place < count; place++)
 	{
-		_putchar(b[place] * count);
-		count--;
+		if (d[place] == '0')
+		{
+			_putchar('0');
+			count--;
+		}
+		else
+		{
+			_putchar(b[place] * count);
+			count--;
+		}
 	}
 	return (0);
 }
