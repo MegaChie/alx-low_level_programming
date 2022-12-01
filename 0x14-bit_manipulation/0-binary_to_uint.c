@@ -21,5 +21,11 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		}
 	}
+	count--;
+	for (place = 0; b[place] != '\0'; place++)
+	{
+		value = value + d[place] * (2 ^ count);
+		count--;
+	}
 	return (value);
 }
