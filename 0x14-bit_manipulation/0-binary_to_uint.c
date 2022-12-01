@@ -12,20 +12,19 @@ unsigned int binary_to_uint(const char *b)
 	{
 		return (0);
 	}
-	decrease = count;
-	count--;
-	for (;place < decrease; place++)
+	for (;place < count; place++)
 	{
 		if (b[place] != 0 && b[place] != 1)
 		{
 			return (0);
 		}
-		else
-		{
-			value = value + ((2 ^ count) * b[place]);
-			count--;
-		}
-		
+	}
+	decrease = count;
+	count--;
+	for (;place < decrease; place++)
+	{
+		value = value + ((2 ^ count) * b[place]);
+		count--;
 	}
 	return (value);
 }
