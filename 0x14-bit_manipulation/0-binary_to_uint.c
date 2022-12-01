@@ -23,6 +23,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 	value[place] = b[place] * count;
 		count--;
+		_putchar(value[place]);
 	}
-	return (value);
+	return (0);
 }
