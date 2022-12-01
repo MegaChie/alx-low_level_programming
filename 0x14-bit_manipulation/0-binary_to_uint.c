@@ -5,7 +5,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int count = strlen(b), place = 0;
+	int count = strlen(b), place = 0, decrease;
 
 	if (b == 0)
 	{
@@ -18,14 +18,12 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		}
 	}
-	for (;place < count; place++)
+	decrease = count;
+	for (;place < decrease; place++)
 	{
 		count--;
-		else
-		{
-			_putchar(b[place] * count);
-			count--;
-		}
+		_putchar(b[place] * count);
+		count--;
 	}
 	return (0);
 }
