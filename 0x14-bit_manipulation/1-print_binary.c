@@ -1,7 +1,9 @@
 #include "main.h"
 #include <string.h>
 /**
- * 
+ * print_binary - convert decimal to binary.
+ * @n: decimal to conver
+ * Returns: convertion result
  */
 void print_binary(unsigned long int n)
 {
