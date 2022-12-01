@@ -23,7 +23,7 @@ unsigned int binary_to_uint(const char *b)
 	count--;
 	for (;place < decrease; place++)
 	{
-		value = value + ((2 ^ count) * d[place]);
+		value = value + ((2 ^ count) * b[place]);
 		count--;
 	}
 	return (value);
