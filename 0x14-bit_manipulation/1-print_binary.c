@@ -5,25 +5,16 @@
  */
 void print_binary(unsigned long int n)
 {
-	int count = strlen(b), place = 0, decrease;
-
-	if (b == 0)
+	if (n >> 0)
 	{
-		return (0);
-	}
-	for (;place < count; place++)
-	{
-		if (b[place] != 0 && b[place] != 1)
+		if (n >> 1)
 		{
-			return (0);
+			print_binary(n >> 1);
 		}
+		_putchar((n & 1) + '0');
 	}
-	decrease = count;
-	count--;
-	for (;place < decrease; place++)
+	else
 	{
-		_putchar(b[place] * count);
-		count--;
+		_putchar('0');
 	}
-	return (0);
 }
