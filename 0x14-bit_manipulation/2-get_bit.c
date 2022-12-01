@@ -10,7 +10,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	{
 		return (0);
 	}
-	for (place = 0; place <= index; place++)
+	for (place = 0; place <= 63; place++)
 	{
 		if (place == index)
 		{
