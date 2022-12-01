@@ -21,8 +21,8 @@ unsigned int binary_to_uint(const char *b)
 	}
 	for (;place < count; place++)
 	{
-	value = b[place] * count;
+	value[place] = b[place] * count;
 		count--;
-		_putchar(value);
 	}
+	return (value);
 }
