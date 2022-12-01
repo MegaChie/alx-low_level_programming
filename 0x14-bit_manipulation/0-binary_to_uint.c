@@ -12,13 +12,13 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	}
 	decrease = count;
+	count--;
 	for (;place < decrease; place++)
 	{
 		if (b[place] != 0 && b[place] != 1)
 		{
 			return (0);
 		}
-		count--;
 		_putchar(b[place] * count);
 		count--;
 	}
