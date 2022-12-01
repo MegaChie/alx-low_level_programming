@@ -14,7 +14,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		return (0);
 	}
-	for (;place < count; place++)
+	for (; place < count; place++)
 	{
 		if (b[place] != '0' && b[place] != '1')
 		{
@@ -29,5 +29,4 @@ unsigned int binary_to_uint(const char *b)
 		}
 	}
 	return (value);
-	
 }
