@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * 
+ * errorLine - provide error massage relating to the case.
+ * @file_from: source file
+ * @file_to: destination file
  */
 void errorLine(int file_from, int file_to, char *argv[])
 {
@@ -17,7 +19,10 @@ void errorLine(int file_from, int file_to, char *argv[])
 	}
 }
 /**
- * 
+ * main - copy contents of a file to another file.
+ * @argv: argument vector
+ * @argc: argument count
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
