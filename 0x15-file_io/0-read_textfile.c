@@ -35,7 +35,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(hold);
 		return (0);
 	}
-	iswrite = write(STDOUT_FILENO, hold, letters);
+	iswrite = write(STDOUT_FILENO, hold, isread);
 	if (isread != iswrite)
 	{
 		return (0);
