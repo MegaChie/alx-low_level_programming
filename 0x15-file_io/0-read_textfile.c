@@ -8,7 +8,7 @@
  * read_textfile - read certain number of chars of file.
  * @filename: pointer to file to read from
  * @letters: number of chars to output
- * Returns: 0 or numbers of chars read
+ * Return: 0 or numbers of chars read
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -28,7 +28,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	hold = malloc(sizeof(char) * letters);
 	if (hold == 0)
 	{
-		close (myFile);
+		close(myFile);
 		return (0);
 	}
 	isread = read(myFile, hold, letters);
