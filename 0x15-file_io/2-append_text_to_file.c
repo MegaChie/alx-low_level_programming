@@ -1,6 +1,9 @@
 #include "main.h"
 /**
- * 
+ * append_text_to_file - add data to the end of a file.
+ * @filename: pointer to the file name
+ * @text_content: amount of data to append to file
+ * Return: 1 when success or -1 otherwise
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
