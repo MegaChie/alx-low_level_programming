@@ -5,7 +5,9 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * 
+ * read_textfile - read certain number of chars of file.
+ * @filename: pointer to file to read from
+ * @letters: number of chars to output
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
