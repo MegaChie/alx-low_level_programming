@@ -22,5 +22,23 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-
+	hold = malloc(sizeof(char) * letters);
+	if (hold == 0)
+	{
+		close (myFile);
+		return (0);
+	}
+	isread = read(myFile, hold, letters);
+	close(myFile);
+	if (isread == -1)
+	{
+		free(hold);
+		return (0);
+	}
+	iswrite = write(STDOUT_FILENO, hold, letters);
+	if (isread != iswrite)
+	{
+		return (0);
+	}
+	return (iswrite);
 }
