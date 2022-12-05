@@ -4,7 +4,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int myFile, letters, permission;
+	int myFile, letters, writing;
 
 	if (filename == 0)
 	{
@@ -19,4 +19,15 @@ int create_file(const char *filename, char *text_content)
 	{
 		text_content = "";
 	}
+	for (letters = 0; text_content[letters]; letters++)
+	{
+
+	}
+	writing = write(myFile, text_content, letters);
+	if (writing == -1)
+	{
+		return (-1);
+	}
+	close(myFile);
+	return(1);
 }
