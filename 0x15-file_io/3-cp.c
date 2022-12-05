@@ -4,6 +4,7 @@
  * errorLine - provide error massage relating to the case.
  * @file_from: source file
  * @file_to: destination file
+ * @argv: argument vector
  */
 void errorLine(int file_from, int file_to, char *argv[])
 {
