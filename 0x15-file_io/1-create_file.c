@@ -1,6 +1,9 @@
 #include "main.h"
 /**
- * 
+ * create_file - creates a file with given content.
+ * @filename: pointer to the file name.
+ * @text_content: data to put in the file
+ * Return: 1 if success or -1 otherwise
  */
 int create_file(const char *filename, char *text_content)
 {
