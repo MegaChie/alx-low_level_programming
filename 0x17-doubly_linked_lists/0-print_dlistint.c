@@ -2,6 +2,7 @@
 /**
  * print_dlistint - check code.
  * @h: constant struct pointer
+ * Return: count
  */
 size_t print_dlistint(const dlistint_t *h)
 {
@@ -13,7 +14,7 @@ size_t print_dlistint(const dlistint_t *h)
 	}
 	while(h->prev != 0)
 	{
-		h = h->prev
+		h = h->prev;
 	}
 	while (h != 0);
 	{
