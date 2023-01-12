@@ -112,8 +112,7 @@ int main(int argc, char **argv)
 	keygen[5] = ((char *)alph)[f6(argv[1])];
 	keygen[6] = '\0';
 	for (ch = 0; keygen[ch]; ch++)
-	{
 		printf("%c", keygen[ch]);
-	}
+	
 	return (0);
 }
