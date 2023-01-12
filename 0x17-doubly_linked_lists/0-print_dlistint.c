@@ -2,7 +2,7 @@
 /**
  * print_dlistint - check code.
  * @h: constant struct pointer
- * Return: count
+ * Return: count value
  */
 size_t print_dlistint(const dlistint_t *h)
 {
