@@ -1,6 +1,9 @@
 #include "hash_tables.h"
 /**
- * 
+ * hash_table_get - check code.
+ * @ht: constant struct variable
+ * @key: constant character pointer
+ * Return: 0, NULL, or function's value
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
@@ -9,12 +12,12 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	if (ht == NULL || key == NULL || *key == '\0')
 	{
-		return 0;
+		return (0);
 	}
 	index = key_index((const unsigned char *)key, ht->size);
 	if (index >= ht->size)
 	{
-		return NULL;
+		return (NULL);
 	}
 	node = ht->array[index];
 	while (node && strcmp(node->key, key) != 0)
