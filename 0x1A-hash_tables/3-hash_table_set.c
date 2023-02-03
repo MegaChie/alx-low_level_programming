@@ -12,12 +12,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	char *valueCopy;
 	unsigned long int index, count;
 
-	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)	
+	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 	{
 		return (0);
 	}
 	valueCopy = strdup(value);
-	if (valueCopy == 0)
+	if (valueCopy == NULL)
 	{
 		return (0);
 	}
@@ -32,7 +32,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 	}
 	new = malloc(sizeof(hash_node_t));
-	if (new == 0)
+	if (new == NULL)
+	{
+		free(valueCopy);
+		return (0);
+	}
+	new->key = strdup(key);
+	if (new->key == NULL)
 	{
 		free(new);
 		return (0);
