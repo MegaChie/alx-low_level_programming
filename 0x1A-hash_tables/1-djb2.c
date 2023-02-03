@@ -1,6 +1,8 @@
 #include "hash_tables.h"
 /**
- * 
+ * hash_djb2 - check code.
+ * @char: constant unsigned char variable
+ * Return: hash's value
  */
 unsigned long int hash_djb2(const unsigned char *str)
 {
@@ -12,5 +14,5 @@ unsigned long int hash_djb2(const unsigned char *str)
 	{
 		hash = ((hash << 5) + hash) + count;
 	}
-	return hash;
+	return (hash);
 }
