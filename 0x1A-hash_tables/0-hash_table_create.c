@@ -12,17 +12,17 @@ hash_table_t *hash_table_create(unsigned long int size)
 	hashTableCreated = malloc(sizeof(hash_table_t));
 	if (hashTableCreated == 0)
 	{
-		return NULL;
+		return (NULL);
 	}
 	hashTableCreated->size = size;
 	hashTableCreated->array = malloc(sizeof(hash_node_t) * size);
 	if (hashTableCreated->array == 0)
 	{
-		return NULL;
+		return (NULL);
 	}
 	for (count = 0; count < size; count++)
 	{
 		hashTableCreated->array[count] = NULL;
 	}
-	return hashTableCreated;
+	return (hashTableCreated);
 }
