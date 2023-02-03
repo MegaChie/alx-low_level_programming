@@ -1,6 +1,8 @@
 #include "hash_tables.h"
 /**
- * 
+ * hash_table_create - check code.
+ * @size: long unsigned integer variable
+ * Return: NULL or address
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
