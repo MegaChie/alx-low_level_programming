@@ -1,4 +1,4 @@
-#include "hash_tabels.h"
+#include "hash_tables.h"
 /**
  * hash_table_set - check code.
  * @ht: hash_node_t variable
