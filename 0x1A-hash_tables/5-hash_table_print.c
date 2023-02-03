@@ -1,6 +1,7 @@
 #include "hash_tables.h"
 /**
- * 
+ * hash_table_print - check code.
+ * @ht: constant struct pointer
  */
 void hash_table_print(const hash_table_t *ht)
 {
