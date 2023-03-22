@@ -1,5 +1,5 @@
 #!/bin/bash
 CC = gcc
 SRC := $(wildcard *.c)
-all: school.c main.c
+all:
 	${CC} ${SRC} -o school
