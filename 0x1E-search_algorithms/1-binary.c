@@ -8,19 +8,27 @@
  */
 int linear_search(int *array, size_t size, int value)
 {
-	size_t i = 0;
+	size_t i = 0, left = 0, right = size - 1, middel;
 
 	if (array == 0 || array == NULL)
 	{
 		return -1;
 	}
-	for (; i < size; i++)
+	while (left <= right)
 	{
-		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
-		if (array[i] == value)
+		middel = floor((left + right) / 2);
+		if (array[middel] < value)
 		{
-			return i;
+			left = middel + 1;
+		}
+		else if (array[middel] > value)
+		{
+			right = middel - 1;
+		}
+		else
+		{
+			return (middel);
 		}
 	}
-	return -1;
+	return (-1);
 }
