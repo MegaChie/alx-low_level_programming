@@ -1,6 +1,6 @@
 #include "search_algos.h"
 /**
- * linear_search - do simple search algorithm
+ * binary_search - do simple search algorithm
  * @array: integer pointer to the first element of the array to search in
  * @size: integer variable, and is the number of elements in array
  * @value: integer variable, and is  is the value to search for
