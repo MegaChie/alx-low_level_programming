@@ -6,11 +6,11 @@
  * @value: integer variable, and is  is the value to search for
  * Return: the first index where value is located or -1 
  */
-int linear_search(int *array)
+int linear_search(int *array, size_t size, int value)
 {
-	printf("%d", *array);
+	int found = 0, i = 0;
 
-	/*if (array == NULL)
+	if (array == NULL)
 	{
 		found = 1;
 	}
@@ -33,5 +33,5 @@ int linear_search(int *array)
 	else
 	{
 		return 0;
-	}*/
+	}
 }
