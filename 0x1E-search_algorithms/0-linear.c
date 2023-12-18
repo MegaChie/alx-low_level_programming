@@ -8,7 +8,7 @@
  */
 int linear_search(int *array, size_t size, int value)
 {
-	found = 0;
+	int found = 0;
 
 	if (array == NULL)
 	{
