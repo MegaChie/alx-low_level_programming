@@ -9,7 +9,6 @@
 int linear_search(int *array, size_t size, int value)
 {
 	
-	int last = array + (sizeof(*array) * size);
 
 	printf("%d    %d", &array, value);
 	return 0;
