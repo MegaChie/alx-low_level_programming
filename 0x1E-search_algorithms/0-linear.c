@@ -8,18 +8,18 @@
  */
 int linear_search(int *array, size_t size, int value)
 {
-	size_t i, found = 0;
+	found = 0;
 
 	if (array == NULL)
 	{
 		found = 1;
 	}
-	for (i = 0; i < size; i++)
+	for (array; array < size; array++)
 	{
-		printf("Value checked array[%zu] = [%d]\n", i, array[i]);
-		if (array[i] == value)
+		printf("Value checked array[%zu] = [%d]\n", array, array[array]);
+		if (array[array] == value)
 		{
-			printf("found %d at index: %zu", value, i);
+			printf("found %d at index: %zu", value, array);
 			found = 1;
 			break;
 		}
