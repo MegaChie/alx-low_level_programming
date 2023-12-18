@@ -9,7 +9,7 @@
 int linear_search(int *array, size_t size, int value)
 {
 	int found = 0, i = 0;
-	int last = &(array + (sizeof(*array) * size))
+	int last = &(array + (sizeof(*array) * size));
 
 	if (array == NULL)
 	{
