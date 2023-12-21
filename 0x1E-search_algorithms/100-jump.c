@@ -26,7 +26,7 @@ int jump_search(int *array, size_t size, int value)
 	while (array[i] < value)
 	{
 		o = o + 1;
-		if (o = min(o, size))
+		if (o == min(o, size))
 		{
 			return (-1);
 		}
