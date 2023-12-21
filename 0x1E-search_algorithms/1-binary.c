@@ -14,9 +14,19 @@ int binary_search(int *array, size_t size, int value)
 	{
 		return (-1);
 	}
+	/* printing whole array */
+	for (i = 0; i < size; i++)
+		{
+			printf("%d", array[i]);
+			if (i != middel - 1)
+			{
+				printf(", ");
+			}
+		}
 	while (left <= right)
 	{
 		middel = floor((left + right) / 2);
+		/* printing slice */
 		printf("Searching in array: ");
 		for (; i < middel; i++)
 		{
