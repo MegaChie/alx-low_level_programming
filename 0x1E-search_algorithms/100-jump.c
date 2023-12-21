@@ -22,7 +22,7 @@ int jump_search(int *array, size_t size, int value)
 	while (array[a] < value)
 	{
 		a++;
-		if (a == min(b, size))
+		if (a == fmin(b, size))
 		{
 			return (-1);
 		}
