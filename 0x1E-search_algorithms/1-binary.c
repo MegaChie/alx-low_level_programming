@@ -33,8 +33,6 @@ int binary_search(int *array, size_t size, int value)
 	{
 		return (-1);
 	}
-	/* printing whole array */
-	print_array(array, left, right);
 	while (left <= right)
 	{
 		middel = floor((left + right) / 2);
