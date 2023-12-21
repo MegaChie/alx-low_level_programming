@@ -14,7 +14,7 @@ int jump_search(int *array, size_t size, int value)
 	{
 		return (-1);
 	}
-	while (array[fmin(i , size) - 1] < value)
+	while (array[min(i , size) - 1] < value)
 	{
 		i = o;
 		o = o + floor(sqrt(size));
