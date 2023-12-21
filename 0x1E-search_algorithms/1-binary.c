@@ -23,6 +23,7 @@ int binary_search(int *array, size_t size, int value)
 				printf(", ");
 			}
 		}
+	printf("\n")
 	while (left <= right)
 	{
 		middel = floor((left + right) / 2);
