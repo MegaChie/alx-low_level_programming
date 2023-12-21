@@ -8,7 +8,7 @@
  */
 int jump_search(int *array, size_t size, int value)
 {
-	size_t a = 0, b = seil(sqrt(size));
+	size_t a = 0, b = ceil(sqrt(size));
 
 	if (array == 0 || array == NULL)
 	{
