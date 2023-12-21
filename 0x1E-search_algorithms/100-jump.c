@@ -14,7 +14,7 @@ int jump_search(int *array, size_t size, int value)
 	{
 		return (-1);
 	}
-	while (array[((b<n) ? b : n) - 1] < value)
+	while (array[((b<size) ? b : size) - 1] < value)
 	{
 		a = b;
 		b = b + floor(sqrt(size));
@@ -26,7 +26,7 @@ int jump_search(int *array, size_t size, int value)
 	while (array[a] < value)
 	{
 		a++;
-		if (a == ((b<n) ? b : n))
+		if (a == ((b<size) ? b : size))
 		{
 			return (-1);
 		}
