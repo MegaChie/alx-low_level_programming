@@ -10,7 +10,6 @@ int jump_search(int *array, size_t size, int value)
 {
 	size_t a = 0, b = floor(sqrt(size));
 
-	x:
 	if (array == 0 || array == NULL)
 	{
 		return (-1);
@@ -38,7 +37,6 @@ int jump_search(int *array, size_t size, int value)
 	if (array[a] == value)
 	{
 		return (a);
-		goto x;
 	}
 	else
 	{
