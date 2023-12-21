@@ -1,5 +1,24 @@
 #include "search_algos.h"
 /**
+ * print_array - Prints the array.
+ * @array: The source of the array to print.
+ * @left: The left index of the array.
+ * @right: The right index of the array.
+ */
+void print_array(int *array, size_t left, size_t right)
+{
+	size_t i;
+
+	if (array)
+	{
+		printf("Searching in array: ");
+		for (i = left; i < left + (right - left + 1); i++)
+			printf("%d%s", *(array + i), i < left + (right - left) ? ", " : "\n");
+	}
+}
+
+
+/**
  * binary_search - do simple search algorithm
  * @array: integer pointer to the first element of the array to search in
  * @size: integer variable, and is the number of elements in array
@@ -15,30 +34,12 @@ int binary_search(int *array, size_t size, int value)
 		return (-1);
 	}
 	/* printing whole array */
-	printf("Searching in array: ");
-	for (i = 0; i < size; i++)
-		{
-			printf("%d", array[i]);
-			if (i != middel - 1)
-			{
-				printf(", ");
-			}
-		}
-	printf("\n");
+	print_array(array, left, right);
 	while (left <= right)
 	{
 		middel = floor((left + right) / 2);
 		/* printing slice */
-		printf("Searching in array: ");
-		for (; i < middel; i++)
-		{
-			printf("%d", array[i]);
-			if (i != middel - 1)
-			{
-				printf(", ");
-			}
-		}
-		printf("\n");
+		print_array(array, left, right);
 		if (array[middel] < value)
 		{
 			left = middel + 1;
