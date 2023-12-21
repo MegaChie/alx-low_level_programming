@@ -8,38 +8,28 @@
  */
 int jump_search(int *array, size_t size, int value)
 {
-	size_t o = floor(sqrt(size)), n;
-	int count = 0, i = 0;
+	size_t a = 0, b = floor(sqrt(size));
 
-	if (array == 0 || array == NULL)
+	while (array[(min(b, size) - 1)] < value)
 	{
-		return (-1);
-	}
-	for (n = 0; n < size; n++)
-	{
-		count++;
-	}
-	while (array[min(i , count) - 1] < value)
-	{
-		i = o;
-		o = o + floor(sqrt(size));
-		if (o >= size)
+		a = b;
+		b = b + floor(sqrt(size));
+		if (a >= size)
 		{
 			return (-1);
 		}
 	}
-	while (array[i] < value)
+	while (array[a] < value)
 	{
-		o = o + 1;
-		if (o == fmin(o, count))
+		a++;
+		if (a == min(b, size))
 		{
 			return (-1);
 		}
 	}
-	printf("Value checked array[%d] = [%d]\n", i, array[i]);
-	if (array[i] == value)
+	if (array[a] == value)
 	{
-		return (o);
+		return (a);
 	}
 	else
 	{
