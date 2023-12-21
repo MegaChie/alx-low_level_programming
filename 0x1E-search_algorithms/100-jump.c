@@ -10,21 +10,25 @@ int jump_search(int *array, size_t size, int value)
 {
 	size_t a = 0, b = floor(sqrt(size));
 
+	if (array == 0 || array == NULL)
+	{
+		return (-1);
+	}
 	while (array[(((a < b) ? a : b) - 1)] < value)
 	{
 		a = b;
 		b = b + floor(sqrt(size));
 		if (a >= size)
 		{
-			return;
+			return (-1);
 		}
 	}
 	while (array[a] < value)
 	{
 		a++;
-		if (a == ((a < b) ? a : b))
+		if (a == fmin(b, size))
 		{
-			return;
+			return (-1);
 		}
 	}
 	if (array[a] == value)
