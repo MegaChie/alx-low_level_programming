@@ -8,11 +8,16 @@
  */
 int jump_search(int *array, size_t size, int value)
 {
-	int i = 0, o = floor(sqrt(size));
+	size_t i = 0, o = floor(sqrt(size)), n;
+	int count = 0;
 
 	if (array == 0 || array == NULL)
 	{
 		return (-1);
+	}
+	for (n = 0; n < size; n++)
+	{
+		count++;
 	}
 	while (array[min(i , size) - 1] < value)
 	{
