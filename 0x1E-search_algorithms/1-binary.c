@@ -22,7 +22,7 @@ int binary_search(int *array, size_t size, int value)
 		{
 			printf("%d, ", array[i]);
 		}
-		printf("\n")
+		printf("\n");
 		if (array[middel] < value)
 		{
 			left = middel + 1;
