@@ -24,11 +24,11 @@ int interpolation_search(int *array, size_t size, int value)
 		}
 		if (array[pos] < x)
 		{
-			return (interpolation_search(int array, size_t pos + 1, int value));
+			return (interpolation_search(int *array, size_t pos + 1, int value));
 		}
 		if (array[pos] > value)
 		{
-			return (interpolation_search(int array, size_t pos - 1, int value));
+			return (interpolation_search(int *array, size_t pos - 1, int value));
 		}
 	}
 	return (-1);
