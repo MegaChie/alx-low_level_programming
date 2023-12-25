@@ -6,7 +6,7 @@
  * @value: integer variable, and is  is the value to search for
  * Return: the first index where value is located or -1
  */
-int interpolation_search(int *array, int lo, int hi, int value)
+int interpolation_search(int *array, int low, int high, int value)
 {
 	size_t low = 0, high = size - 1, pos;
 	size_t prin = low + (((double)(high - low) /
