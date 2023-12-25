@@ -6,7 +6,7 @@
  * @value: integer variable, and is  is the value to search for
  * Return: the first index where value is located or -1
  */
-int interpolation_search(int *array, size_t size, int value)
+int interpolation_search(int *array, int lo, int hi, int value)
 {
 	size_t low = 0, high = size - 1, pos;
 	size_t prin = low + (((double)(high - low) /
@@ -24,11 +24,11 @@ int interpolation_search(int *array, size_t size, int value)
 		}
 		if (array[pos] < x)
 		{
-			return (interpolation_search(int *array, size_t pos + 1, int value));
+			return (interpolation_search(array, pos + 1, high, value));
 		}
 		if (array[pos] > value)
 		{
-			return (interpolation_search(int *array, size_t pos - 1, int value));
+			return (interpolation_search(array, low, pos - 1, int value));
 		}
 	}
 	return (-1);
