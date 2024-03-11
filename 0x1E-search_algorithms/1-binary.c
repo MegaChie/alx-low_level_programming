@@ -30,6 +30,13 @@ int binary_search(int *array, size_t size, int value)
 {
 	size_t right = size - 1, left = 0, middle;
 
+	/*Checking if the array is empty or not there*/
+	if (array == NULL)
+	{
+		return (-1);
+	}
+
+	/*Starts the search*/
 	while (left <= right)
 	{
 		printer(array, left, right);
@@ -47,5 +54,6 @@ int binary_search(int *array, size_t size, int value)
 			return (middle);
 		}
 	}
+	/*Not found*/
 	return (-1);
 }
