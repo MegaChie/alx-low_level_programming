@@ -8,6 +8,7 @@
  */
 int jump_search(int *array, size_t size, int value)
 {
+	/*Missing prints*/
 	size_t a = 0, b = floor(sqrt(size));
 
 	if (array == NULL || size == 0)
@@ -16,7 +17,6 @@ int jump_search(int *array, size_t size, int value)
 	}
 	while (array[((b < size) ? b : size) - 1] < value)
 	{
-		printf("Value checked array[%ld] = [%d]\n")
 		a = b;
 		b = b + floor(sqrt(size));
 		if (a >= size)
