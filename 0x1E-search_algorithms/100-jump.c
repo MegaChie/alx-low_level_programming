@@ -7,3 +7,8 @@
  * Return: the first index where value is located or -1
  */
 int interpolation_search(int *array, size_t size, int value)
+{
+    size_t a = 0, b = floor(sqrt(size));
+
+    
+}
