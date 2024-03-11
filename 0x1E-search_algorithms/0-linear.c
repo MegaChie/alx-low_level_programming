@@ -11,7 +11,7 @@ int linear_search(int *array, size_t size, int value)
     size_t n = 0;
 
     // checking if the array is empty or not even there
-    if (array == 0 || array == Null)
+    if (array == 0 || array == NULL)
     {
         return (-1);
     }
@@ -19,7 +19,7 @@ int linear_search(int *array, size_t size, int value)
     // start the search
     for (; n < size; n++)
     {
-        printf("Value checked array[%ld] = [%d]", n, array[n])
+        printf("Value checked array[%ld] = [%d]", n, array[n]);
         if (array[n] == value)
         {
             return (n);
