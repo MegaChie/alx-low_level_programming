@@ -10,5 +10,26 @@ int interpolation_search(int *array, size_t size, int value)
 {
     size_t a = 0, b = floor(sqrt(size));
 
-    
+    while (array[((b < size) ? b : size) - 1] < value)
+    {
+        a = b;
+        b = b + floor(sqrt(size));
+        if (a >= size)
+        {
+            return (-1);
+        }
+    }
+    while (array[a] < value)
+    {
+        a++;
+        if (a == ((b < size) ? b : size))
+        {
+            return (-1);
+        }
+    }
+    if (array[a] == value)
+    {
+        return (a);
+    }
+    return (-1);
 }
