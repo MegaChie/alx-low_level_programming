@@ -8,24 +8,24 @@
  */
 int linear_search(int *array, size_t size, int value)
 {
-    size_t n = 0;
+	size_t n = 0;
 
-    /*Checking if the array is empty or not even there*/
-    if (array == 0 || array == NULL)
-    {
-        return (-1);
-    }
+	/*Checking if the array is empty or not even there*/
+	if (array == 0 || array == NULL)
+	{
+		return (-1);
+	}
 
-    /*Starts the search*/
-    for (; n < size; n++)
-    {
-        printf("Value checked array[%ld] = [%d]", n, array[n]);
-        if (array[n] == value)
-        {
-            return (n);
-        }
-    }
+	/*Starts the search*/
+	for (; n < size; n++)
+	{
+		printf("Value checked array[%ld] = [%d]\n", n, array[n]);
+		if (array[n] == value)
+		{
+			return (n);
+		}
+	}
 
-    /*Not found*/
-    return (-1);
+	/*Not found*/
+	return (-1);
 }
