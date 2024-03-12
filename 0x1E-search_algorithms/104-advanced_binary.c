@@ -40,7 +40,7 @@ int advanced_binary(int *array, size_t size, int value)
 	while (left <= right)
 	{
 		printer(array, left, right);
-		middle = left + ((left + right) / 2);
+		middle = left + ((right - low) / 2);
 		if ((array[middle] == value) &&
 			(middle == 0 || array[middle - 1] < value))
 		{
