@@ -20,15 +20,15 @@ void printer(int *array, size_t left, size_t right)
 }
 
 /**
- * binary_search - do simple search algorithm
+ * advanced_binary - do simple search algorithm
  * @array: integer pointer to the first element of the array to search in
  * @size: integer variable, and is the number of elements in array
  * @value: integer variable, and is  is the value to search for
  * Return: the first index where value is located or -1
  */
-int binary_search(int *array, size_t size, int value)
+int advanced_binary(int *array, size_t size, int value)
 {
-	size_t right = size - 1, left = 0, middle;
+	size_t right = size, left = 0, middle;
 
 	/*Checking if the array is empty or not there*/
 	if (array == NULL)
@@ -37,7 +37,7 @@ int binary_search(int *array, size_t size, int value)
 	}
 
 	/*Starts the search*/
-	while (left <= right)
+	while (left < right)
 	{
 		printer(array, left, right);
 		middle = floor((left + right) / 2);
@@ -45,15 +45,10 @@ int binary_search(int *array, size_t size, int value)
 		{
 			left = middle + 1;
 		}
-		else if (array[middle] > value)
-		{
-			right = middle - 1;
-		}
 		else
 		{
-			return (middle);
+			right = middle;
 		}
 	}
-	/*Not found*/
-	return (-1);
+	return (low);
 }
