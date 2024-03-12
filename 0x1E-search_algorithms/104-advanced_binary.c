@@ -28,7 +28,7 @@ void printer(int *array, size_t left, size_t right)
  */
 int advanced_binary(int *array, size_t size, int value)
 {
-	size_t right = size, left = 0, middle;
+	size_t left = 0, right = size - 1, middle;
 
 	/*Checking if the array is empty or not there*/
 	if (array == NULL)
@@ -37,17 +37,22 @@ int advanced_binary(int *array, size_t size, int value)
 	}
 
 	/*Starts the search*/
-	while (left < right)
+	while (left <= right)
 	{
 		printer(array, left, right);
-		middle = floor((left + right) / 2);
-		if (array[middle] < value)
+		middle = left + ((left + right) / 2);
+		if ((array[middle] == value) &&
+			(middle == 0 || array[middle - 1] < value))
+		{
+			return (middle);
+		}
+		else if (value > array[middle])
 		{
 			left = middle + 1;
 		}
 		else
 		{
-			right = middle;
+			righ = middle - 1;
 		}
 	}
 	return (-1);
