@@ -8,7 +8,7 @@
  */
 int interpolation_search(int *array, size_t size, int value)
 {
-	size_t low = 0, high = size - 1, post;
+	size_t low = 0, high = size - 1, pos;
 
 	while (low <= high && (array[low] <= value && value <= array[high])) {
 		if (low == high) {
