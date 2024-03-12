@@ -1,59 +1,42 @@
 #include "search_algos.h"
 /**
- * printer - Prints the array from the function bellow.
- * @array: The array to print.
- * @left: The left index of the array.
- * @right: The right index of the array.
- */
-void printer(int *array, size_t left, size_t right)
+  * advanced_binary_recursive - Searches recursively using binary search
+  * @array: A pointer to the first element of the [sub]array to search
+  * @left: The starting index of the [sub]array to search
+  * @right: The ending index of the [sub]array to search
+  * @value: The value to search for
+  * Return: index of value in the array or -1
+  *
+  * Description: Prints the [sub]array being searched after each change.
+  */
+int advanced_binary_recursive(int *array, size_t left, size_t right, int value)
 {
 	size_t i;
 
-	if (array)
-	{
-		printf("Searching in array: ");
-		for (i = left; i < left + (right - left + 1); i++)
-		{
-			printf("%d%s", *(array + i), i < left + (right - left) ? ", " : "\n");
-		}
-	}
+	if (right < left)
+		return (-1);
+	printf("Searching in array: ");
+	for (i = left; i < right; i++)
+		printf("%d, ", array[i]);
+	printf("%d\n", array[i]);
+	i = left + (right - left) / 2;
+	if (array[i] == value && (i == left || array[i - 1] != value))
+		return (i);
+	if (array[i] >= value)
+		return (advanced_binary_recursive(array, left, i, value));
+	return (advanced_binary_recursive(array, i + 1, right, value));
 }
 
 /**
- * advanced_binary - do simple search algorithm
- * @array: integer pointer to the first element of the array to search in
- * @size: integer variable, and is the number of elements in array
- * @value: integer variable, and is  is the value to search for
- * Return: the first index where value is located or -1
- */
+  * advanced_binary - Searches recursively using binary search
+  * @array: A pointer to the first element of the array to search
+  * @size: The number of elements in the array
+  * @value: The value to search for
+  * Return: index or -1
+  */
 int advanced_binary(int *array, size_t size, int value)
 {
-	size_t left = 0, right = size - 1, middle;
-
-	/*Checking if the array is empty or not there*/
-	if (array == NULL)
-	{
+	if (array == NULL || size == 0)
 		return (-1);
-	}
-
-	/*Starts the search*/
-	while (left <= right)
-	{
-		printer(array, left, right);
-		middle = left + ((right - left) / 2);
-		if ((array[middle] == value) &&
-			(middle == 0 || array[middle - 1] < value))
-		{
-			return (middle);
-		}
-		else if (value > array[middle])
-		{
-			left = middle + 1;
-		}
-		else
-		{
-			right = middle - 1;
-		}
-	}
-	return (-1);
+	return (advanced_binary_recursive(array, 0, size - 1, value));
 }
