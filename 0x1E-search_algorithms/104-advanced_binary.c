@@ -52,7 +52,7 @@ int advanced_binary(int *array, size_t size, int value)
 		}
 		else
 		{
-			righ = middle - 1;
+			right = middle - 1;
 		}
 	}
 	return (-1);
