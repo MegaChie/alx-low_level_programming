@@ -1,18 +1,12 @@
-/*
- * File: 103-exponential.c
- * Auth: Brennan D Baraban
- */
-
 #include "search_algos.h"
-
 /**
-  * _binary_search - Searches for a value in a sorted array
-  * @array: A pointer to the first element of the array to search
-  * @left: The starting index of the [sub]array to search
-  * @right: The ending index of the [sub]array to search
-  * @value: The value to search for
-  * Return: index of the element or -1
-  */
+ * _binary_search - Searches for a value in a sorted array
+ * @array: A pointer to the first element of the array to search
+ * @left: The starting index of the [sub]array to search
+ * @right: The ending index of the [sub]array to search
+ * @value: The value to search for
+ * Return: index of the element or -1
+*/
 int _binary_search(int *array, size_t left, size_t right, int value)
 {
 	size_t i;
@@ -47,13 +41,13 @@ int _binary_search(int *array, size_t left, size_t right, int value)
 }
 
 /**
-  * exponential_search - Searches for a value in a sorted array
-  *                     using exponential search
-  * @array: A pointer to the first element of the array to search
-  * @size: The number of elements in the array
-  * @value: The value to search for
-  * Return: index of element or -1
-  */
+ * exponential_search - Searches for a value in a sorted array
+ *           using exponential search
+ * @array: A pointer to the first element of the array to search
+ * @size: The number of elements in the array
+ * @value: The value to search for
+ * Return: index of element or -1
+ */
 int exponential_search(int *array, size_t size, int value)
 {
 	size_t i = 0, right;
